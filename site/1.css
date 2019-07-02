@@ -1,0 +1,31 @@
+body {
+
+}
+
+div {
+      font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+header {
+
+  background-image: linear-gradient(90deg, #cccccc 6.25%, #fffce3 6.25%, #fffce3 50%, #cccccc 50%, #cccccc 56.25%, #fffce3 56.25%, #fffce3 100%);
+  background-size: 16.00px 16.00px;
+  
+  color: #222222;
+  text-shadow: 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3, 0px 0px 10px #fffce3;
+  
+  font-size: 48px;
+  padding: 20px;
+  text-align: center;
+  font-family: "helvetica neue";
+  font-weight: 500;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 50rem;
+}
