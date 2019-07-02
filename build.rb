@@ -36,6 +36,8 @@ Dir['site/*.page'].each do |f|
     attrs[$1]
   end
 
+  p attrs
+
   out = template
 
   File.open("_site/" + File.basename(f, '.page') + '.html', "w") { |f| f.puts out }
