@@ -8,8 +8,13 @@ body {
   margin: 0;
   overflow-x: none;
 }
+pre { margin-left: 0; padding: 0; }
+code { font-family: menlo, consolas, monaco, monospace; font-size: 0.8rem; line-height: 1.25rem; }
 
-code { font-family: menlo; }
+.hljs {
+  background-color: #e2f6ff !important;
+  padding: 0px 16px !important;
+}
 
 .header2 {
   background-image: linear-gradient(90deg, #cccccc 6.25%, #fffce3 6.25%, #fffce3 50%, #cccccc 50%, #cccccc 56.25%, #fffce3 56.25%, #fffce3 100%);
@@ -102,8 +107,8 @@ blockquote {
 #bgbar {
   width: 100%;
   height: 64px;
-  background: url(https://image.shutterstock.com/z/stock-vector-binary-code-digital-technology-data-sorting-from-chaos-to-system-artificial-intelligence-big-785530237.jpg);
-  background: url(https://image.shutterstock.com/z/stock-vector-abstract-halftone-black-and-white-chaotic-pattern-of-dots-monochrome-vector-background-1236366712.jpg);
+  /* background: url(https://image.shutterstock.com/z/stock-vector-binary-code-digital-technology-data-sorting-from-chaos-to-system-artificial-intelligence-big-785530237.jpg);
+  background: url(https://image.shutterstock.com/z/stock-vector-abstract-halftone-black-and-white-chaotic-pattern-of-dots-monochrome-vector-background-1236366712.jpg); */
   background-size: cover;
 }
 
