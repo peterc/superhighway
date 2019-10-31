@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>Piloting Go Within Your Company</title>
+  <meta name="description" content="This is an example article." />
+  <meta property="og:description" content="This is an example article." />
+  <meta property="og:title" content="Example article" />
+  <meta property="og:image" content="https://superhighway.dev/images/w_1280,e_sharpen:60/kqplzzmpgxgmp4ites80.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/piloting-go" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Code highlighting stuff -->
+  <link rel="stylesheet" href="/vs.min.css" />
+  <script src="/highlight.min.js"></script>
+</head>
+
+<body class="article" id="top">
+  <div id="bgbar"></div>
+
+    <article>
+      <header>
+        <div class="sub">Let's Write Less Java, More Go</div>
+        <h1>Piloting Go Within Your Company</h1>
+        <h2>Three steps for approaching introducing Go at a company.</h2>
+        <p class="byline">by <a href="https://medium.com/@j.warwani">Junaid Warwani</a>&nbsp;&nbsp;&nbsp;November 1, 2019</p>
+      </header>
+
+      <div class="content">
+        
+        <p>In the years since I first learned Go, there have been several times when I've been implementing a feature at work, be it building on top of a Node.js backend or a Java project, and found myself thinking: <em>"If only I could write this in Go!"</em></p>
+
+        <p>I was lucky to first encounter Go at a company that bought into the many advantages of using the language &mdash; I got to see first-hand how well it worked in a production environment.</p>
+        
+        <p>Since then, I have worked at a startup advocating for and helping to build a new Go service, and at another company that has started using Go as the de-facto language for new microservices. <strong>Along the way, I've found a rough recipe that might help you write less Java and more Go at work.</strong></p>
+        
+        <p>Here are the three steps for how you might pilot Go usage at your company:</p>
+        
+        <ol>
+            <li>Build a deep understanding of Go</li>
+            <li>Help your colleagues play with Go</li>
+            <li>Make the business case</li>
+        </ol>
+        
+        <h2>Build a deep understanding</h2>
+        
+        <p>The first thing a developer would likely say if you ask them to build a new tool in Go is "Why?" That's a completely fair question, and "The gopher is really cute!" probably won't fly as an answer.</p>
+        
+        <p>Before you can convince other engineers to use any new tool, language, or library, you need to understand it well enough yourself to have deep discussions about its advantages and disadvantages. In the case of Go, that means you should be able to answer questions like:</p>
+        
+        <ul>
+          <li>Why should I spend a week learning a new language when I could write this in <em>{insert favorite language}</em> in two days?</li>
+          <li>Isn’t Go still pretty new? There won’t be good libraries for the things I want to do.</li>
+          <li>I thought Go is only good for web servers. I’m not building a web server, so why should I use Go?</li>
+          <li>But what about generics?</li>
+        </ul>
+        
+        <p>There are many ways to go about learning enough so that you can answer these questions. You could build small projects on the side to better understand some of the advantages for yourself, read about why other companies are using Go, and follow industry news to stay up-to-date on what’s new with Go and the Go community.</p>
+        
+        <p>Perhaps there are other companies in your city that already use Go &mdash; you could reach out to developers there to hear about their experiences. The more you can learn, the easier it will be to convince your company to start using Go.</p>
+        
+        <h2>Help your colleagues play</h2>
+        
+        <p>You’ve learned all you can about Go, and you’ve started talking to some of the engineers on your team about your experience. They raised some objections and asked you probing questions, but thanks to your deep understanding of Go, you handled it gracefully. But how do you go from lunchtime conversations to actually making your fellow engineers advocates for Go?</p>
+        
+        <p>The answer is to go play! Engineers, by nature, tend to be inquisitive. Point them to resources that can help them understand the language: a tour of Go is a great place to start.</p>
+        
+        <p>You can also find and share some Go success stories that might resonate with the work your team does, or host a lunch and learn where you can demo how you might rebuild a past project at the company in Go. If you can get buy-in from your manager, host a small hackathon for developers to spend a day or two building small internal tools in the language.</p>
+        
+        <p>In summary, create spaces where engineers can easily explore the language on their own. If there is one important tip I can share here, it’s to not be too forceful in getting your colleagues to try Go. Instead, open doors for them so that they can explore in their own way and find for themselves whether the language resonates with them. If it does, they will be advocates in no time!</p>
+        
+        <h2>Make a business case</h2>
+        
+        <p>It might not be too hard to convince your colleagues to play with Go — let’s face it, most engineers like shiny new toys, especially ones that promise to solve so many of their problems! However, it might be harder to convince the product manager or leadership to introduce Go at your company. After all, your current stack works just fine — why bother with something new? Why spend two weeks learning how to build this new feature in Go when you could have three things shipped in the same amount of time if you use your current language?</p>
+        
+        <p>The truth is, if you’re thinking in the short term, it is likely the wrong decision to start using Go at your company. Unless your current stack is bursting at the seams, you would spend less time and resources and have fewer unknowns sticking to whatever your team is already familiar with. However, in the long term, it’s a completely different story, and your job will be to show this to the decision makers at your company.</p>
+        
+        <p>To do this, go back to some of the success stories of companies implementing Go, and show your PM how new features can be implemented so much faster. Tell the leadership team about Go’s rising popularity among developers, and how it could be a great recruitment tool. And finally, start small. Proposing spending six months rewriting your entire backend infrastructure in Go will be a really hard sell, but suggesting writing a small new microservice in Go could be a great proof of concept on whether Go is right for your company.</p>
+        
+        <p>Over time, if those advantages in development speed and maintenance really do exist, your PMs will notice it themselves and also become advocates. Your colleagues (and you) will mature in your use of Go, and you will have a better idea of the best places to use it in your company’s stack.</p>
+        
+        <h2>In conclusion</h2>
+        
+        <p>Introducing large changes at your company can be quite difficult, and the literal language you write code in can definitely be a big systematic change. Piloting Go at your company can be a lot of work — you’ll have to learn a lot, teach a lot, and spend a lot of time talking instead of coding.</p>
+        
+        <p>But the rewards can be well worth it! You will be able to write more code in a language you enjoy, you will gain a better understanding of Go, and you will learn how to better communicate technical ideas to engineers and non-engineers. Hopefully, it will make you and your entire team much more effective and happy at work. That is, until the next interesting tool comes along and you have to go through this process all over again!</p>
+       
+      </div>
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+<script>hljs.initHighlightingOnLoad();</script>
+</html>

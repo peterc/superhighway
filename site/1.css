@@ -98,7 +98,7 @@ blockquote {
   border-left: 3px solid #999;
 }
 
-.content, header * {
+.content, header > * {
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
