@@ -5,9 +5,12 @@ require 'strscan'
 #CACHE_FOLDER = "/opt/build/cache"
 Dir.mkdir("_site") unless Dir.exist?("_site")
 
+puts "Deleting files from deploy folder"
+`rm -rf _site/*`
+
 # a.scan(/^([A-Z_0-9]+)\:\s(.*?)^/m)
 puts "Copying static files"
-`cp site/* _site/`
+`cp -r site/* _site/`
 
 puts "Rendering HTML"
 Dir['site/*.page'].each do |f|
