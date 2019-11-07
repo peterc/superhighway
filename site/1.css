@@ -38,7 +38,7 @@ pre { margin-left: 0; padding: 0; }
 code { font-family: "IBM Plex Mono", menlo, consolas, monaco, monospace; font-size: 0.8rem; line-height: 1.25rem; }
 
 .hljs {
-  background-color: #e2f6ff !important;
+  background-color: #edf2f7 !important;
   padding: 0px 16px !important;
 }
 
@@ -97,6 +97,10 @@ blockquote {
   color: #666;
   border-left: 3px solid #999;
 }
+
+p > mark {
+  background-color: rgba(179,227,255,0.4); font-style: italic;
+ }
 
 .content, header > * {
   max-width: 50rem;
