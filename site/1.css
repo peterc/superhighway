@@ -34,12 +34,16 @@ body {
   font-size: 1.3rem;
   margin: 0;
 }
-pre { margin-left: 0; padding: 0; }
-code { font-family: "IBM Plex Mono", menlo, consolas, monaco, monospace; font-size: 0.8rem; line-height: 1.25rem; }
+pre { margin-left: 0;  }
+code { font-family: "IBM Plex Mono", menlo, consolas, monaco, monospace; font-size: 0.8em; line-height: 1.25rem;  }
 
+pre code {
+  padding: 1em 0; 
+
+}
 .hljs {
   background-color: #edf2f7 !important;
-  padding: 0px 16px !important;
+  padding: 16px 16px !important;
 }
 
 article {
@@ -226,6 +230,10 @@ hr.promo_line {
 
 #logo img {
   vertical-align: -4px;
+}
+
+header figure img {
+  max-width: 100px;
 }
 
 /* @media only screen and (max-device-width: 480px) {
