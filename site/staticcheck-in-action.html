@@ -66,6 +66,7 @@ func Query() (Result, error) {
 		Entries: []string{},
 	}, nil
 }
+
 func ResultEntries() (Result, error) {
 	err := errors.New("no entries found")
 	result, err := Query()
@@ -77,6 +78,7 @@ func ResultEntries() (Result, error) {
 	}
 	return result, nil
 }
+
 func main() {
 	result, err := ResultEntries()
 	if err != nil {
