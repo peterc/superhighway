@@ -49,7 +49,7 @@
 
         <p>I always double check these errors as they can cause some serious bugs. Here's one example:</p>
 
-        <pre><code class="">package main
+        <pre><code class="go">package main
 
 import (
 	"errors"
@@ -89,7 +89,7 @@ func main() {
 
         <p>When running staticcheck on this code, we see the following errors:</p>
 
-        <pre><code>$~ staticcheck main.go
+        <pre><code class="plaintext">$ staticcheck main.go
 main.go:20:2: this value of err is never used (SA4006)
 main.go:20:19: New is a pure function but its return value is ignored (SA4017)</code></pre>
 
@@ -97,7 +97,7 @@ main.go:20:19: New is a pure function but its return value is ignored (SA4017)</
 
         <p>If we run the code, we see:</p>
 
-        <pre><code>$~ go run main.go
+        <pre><code class="plaintext">$ go run main.go
 result={[]}, err=&lt;nil&gt;</code></pre>
 
         <p>Let's investigate:</p>
@@ -112,7 +112,7 @@ result={[]}, err=&lt;nil&gt;</code></pre>
 
         <p>The method you choose to fix this will depend on your preferred style. Here is one way:</p>
 
-        <pre><code>func ResultEntries() (Result, error) {
+        <pre><code class="go">func ResultEntries() (Result, error) {
 	result, err := Query()
 	if err != nil {
 		return Result{}, err
@@ -128,18 +128,18 @@ result={[]}, err=&lt;nil&gt;</code></pre>
 
         <p>Here we reassign the <code>err</code> variable before checking the length of <code>result.Entries</code>. This will now return the correct error:</p>
 
-        <pre><code>$~ go run main.go
+        <pre><code class="plaintext">$ go run main.go
 2019/09/18 19:03:40 no entries found
 exit status 1</code></pre>
 
         <p>and staticcheck no longer complains:</p>
 
-        <pre><code>$~ staticcheck main.go
-$~</code></pre>
+        <pre><code class="plaintext">$ staticcheck main.go
+$</code></pre>
 
         <p>Another way would be:</p>
 
-        <pre><code>func ResultEntries() (Result, error) {
+        <pre><code class="go">func ResultEntries() (Result, error) {
 	result, err := Query()
 	if err != nil {
 		return Result{}, err
@@ -156,7 +156,7 @@ $~</code></pre>
 
         <p>If staticcheck finds this issue in your code, you can fix it for better performance. Here's an example (note: this is not an extensive regular expression for matching emails):</p>
 
-        <pre><code>package main
+        <pre><code class="go">package main
 
 import (
 	"fmt"
@@ -192,14 +192,14 @@ func main() {
 
         <p>In this example we pass a slice of email addresses to a validation function that matches them with a regular expression. Staticcheck finds the following issue:</p>
 
-        <pre><code>$~ staticcheck main.go
+        <pre><code class="plaintext">$ staticcheck main.go
 main.go:11:37: calling regexp.MatchString in a loop has poor performance, consider using regexp.Compile (SA6000)</code></pre>
 
         <p>Let's fix it and then look at some benchmarks.</p>
 
         <p>To fix the issue we'll compile the regular expression at the beginning of the function instead of recreating it in the loop every iteration:</p>
 
-        <pre><code>func ValidateEmails(addrs []string) (bool, error) {
+        <pre><code class="go">func ValidateEmails(addrs []string) (bool, error) {
 	re := regexp.MustCompile(`^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]*$`)
 	for _, email := range addrs {
 		matched := re.MatchString(email)
@@ -214,17 +214,17 @@ main.go:11:37: calling regexp.MatchString in a loop has poor performance, consid
 
         <p>The method <code>regexp.MustCompile</code> creates a reusable regular expression struct and panics if it can't be compiled. You may have noticed that the string changed slightly, but we'll ignore that for the purposes of this post it's not relevant to the overall fix. If we run staticcheck on this new code, we see no errors:</p>
 
-        <pre><code>$~ staticcheck main.go
-$~</code></pre>
+        <pre><code class="plaintext">$ staticcheck main.go
+$</code></pre>
 
         <p>The code runs and returns <code>true</code>:</p>
 
-        <pre><code>$~ go run main.go
+        <pre><code class="plaintext">$ go run main.go
 true</code></pre>
 
         <p>Now let's write a benchmark to compare these two methods. We'll call the original method <code>ValidateEmailsRegexpLoop</code>, and keep the current implementation called <code>ValidateEmails</code>:</p>
 
-        <pre><code>package main
+        <pre><code class="go">package main
 
 import "testing"
 
@@ -250,7 +250,7 @@ func BenchmarkValidateEmails(b *testing.B) {
 
         <p>Let's run this benchmark:</p>
 
-        <pre><code>$~ go test -bench=.
+        <pre><code class="plaintext">$ go test -bench=.
 goos: darwin
 goarch: amd64
 BenchmarkValidateEmailsRegexpLoop-4         100000         21150 ns/op
@@ -268,23 +268,23 @@ ok      _/Users/gopher  4.045s</code></pre>
 
         <p><a href="https://github.com/aws/aws-sdk-go">github.com/aws/aws-sdk-go</a> is the official AWS SDK for Go. To install it, run:</p>
 
-        <pre><code>$~ go get github.com/aws/aws-sdk-go</code></pre>
+        <pre><code class="plaintext">$ go get github.com/aws/aws-sdk-go</code></pre>
 
         <p>and then:</p>
 
-        <pre><code>$~ cd $GOPATH/src/github.com/aws/aws-sdk-go</code></pre>
+        <pre><code class="plaintext">$ cd $GOPATH/src/github.com/aws/aws-sdk-go</code></pre>
 
         <p>Staticcheck takes a long time to run on the entire codebase, so let's run it on a single directory and its sub-directories:</p>
 
-        <pre><code>$ aws-sdk-go git:(master) staticcheck ./aws/...</code></pre>
+        <pre><code class="plaintext">$ aws-sdk-go git:(master) staticcheck ./aws/...</code></pre>
 
         <p>There are many results. The one in particular we'll take a look at is:</p>
 
-        <pre><code>aws/request/request_retry_test.go:133:2: unreachable case clause: github.com/aws/aws-sdk-go/aws/request.temporary will always match before *net/url.Error (SA4020)</code></pre>
+        <pre><code class="plaintext">aws/request/request_retry_test.go:133:2: unreachable case clause: github.com/aws/aws-sdk-go/aws/request.temporary will always match before *net/url.Error (SA4020)</code></pre>
 
         <p>Here is the function:</p>
 
-        <pre><code>func debugerr(t *testing.T, err error) {
+        <pre><code class="go">func debugerr(t *testing.T, err error) {
 	t.Logf("Error, %v", err)
 
 	switch err := err.(type) {
@@ -305,7 +305,7 @@ ok      _/Users/gopher  4.045s</code></pre>
 
         <p>We need to take a look at the <code>temporary</code> type definition as well as <code>url.Error</code> to see what's going on. The <code>temporary</code> type is located in <code>aws/request/retryer.go</code>:</p>
 
-        <pre><code>type temporary interface {
+        <pre><code class="go">type temporary interface {
     Temporary() bool
 }</code></pre>
 
@@ -315,7 +315,7 @@ ok      _/Users/gopher  4.045s</code></pre>
 
         <p>This can be fixed by swapping the case statements:</p>
 
-        <pre><code>func debugerr(t *testing.T, err error) {
+        <pre><code class="go">func debugerr(t *testing.T, err error) {
 	t.Logf("Error, %v", err)
 
 	switch err := err.(type) {
@@ -348,19 +348,19 @@ service/s3/s3manager/upload.go:366:2: field bufferUploadPool is unused (U1000)</
 
         <p>First, we'll get the source:</p>
 
-        <pre><code>go get k8s.io/kubernetes</code></pre>
+        <pre><code class="plaintext">go get k8s.io/kubernetes</code></pre>
 
         <p>Kubernetes is quite a large codebase, so this time we'll just focus on one package, <code>pkg/volume</code>:</p>
 
-        <pre><code>staticcheck ./pkg/volume/...</code></pre>
+        <pre><code class="plaintext">staticcheck ./pkg/volume/...</code></pre>
 
         <p>There are many results, but we'll focus on one of them for now:</p>
 
-        <pre><code>pkg/volume/azure_file/azure_file.go:122:31: this value of err is never used (SA4006)</code></pre>
+        <pre><code class="plaintext">pkg/volume/azure_file/azure_file.go:122:31: this value of err is never used (SA4006)</code></pre>
 
         <p>If we take a look at that code, we see the following function:</p>
 
-        <pre><code>func (plugin *azureFilePlugin) newMounterInternal(spec *volume.Spec, pod *v1.Pod, util azureUtil, mounter mount.Interface) (volume.Mounter, error) {
+        <pre><code class="go">func (plugin *azureFilePlugin) newMounterInternal(spec *volume.Spec, pod *v1.Pod, util azureUtil, mounter mount.Interface) (volume.Mounter, error) {
 	share, readOnly, err := getVolumeSource(spec)
 	if err != nil {
 		return nil, err
@@ -385,31 +385,31 @@ service/s3/s3manager/upload.go:366:2: field bufferUploadPool is unused (U1000)</
 
         <p>We can see that the error returned by the <code>getSecretNameAndNamespace</code> function is ignored. We should add an error check:</p>
 
-        <pre><code>func (plugin *azureFilePlugin) newMounterInternal(spec *volume.Spec, pod *v1.Pod, util azureUtil, mounter mount.Interface) (volume.Mounter, error) {
-            share, readOnly, err := getVolumeSource(spec)
-            if err != nil {
-              return nil, err
-            }
-            secretName, secretNamespace, err := getSecretNameAndNamespace(spec, pod.Namespace)
-            if err != nil {
-              return nil, err
-            }
-            return &azureFileMounter{
-              azureFile: &azureFile{
-                volName:         spec.Name(),
-                mounter:         mounter,
-                pod:             pod,
-                plugin:          plugin,
-                MetricsProvider: volume.NewMetricsStatFS(getPath(pod.UID, spec.Name(), plugin.host)),
-              },
-              util:            util,
-              secretNamespace: secretNamespace,
-              secretName:      secretName,
-              shareName:       share,
-              readOnly:        readOnly,
-              mountOptions:    volutil.MountOptionFromSpec(spec),
-            }, nil
-          }</code></pre>
+        <pre><code class="go">func (plugin *azureFilePlugin) newMounterInternal(spec *volume.Spec, pod *v1.Pod, util azureUtil, mounter mount.Interface) (volume.Mounter, error) {
+  share, readOnly, err := getVolumeSource(spec)
+  if err != nil {
+    return nil, err
+  }
+  secretName, secretNamespace, err := getSecretNameAndNamespace(spec, pod.Namespace)
+  if err != nil {
+    return nil, err
+  }
+  return &azureFileMounter{
+    azureFile: &azureFile{
+      volName:         spec.Name(),
+      mounter:         mounter,
+      pod:             pod,
+      plugin:          plugin,
+      MetricsProvider: volume.NewMetricsStatFS(getPath(pod.UID, spec.Name(), plugin.host)),
+    },
+    util:            util,
+    secretNamespace: secretNamespace,
+    secretName:      secretName,
+    shareName:       share,
+    readOnly:        readOnly,
+    mountOptions:    volutil.MountOptionFromSpec(spec),
+  }, nil
+}</code></pre>
 
         <h3>The Go source tree</h3>
 
@@ -419,7 +419,7 @@ service/s3/s3manager/upload.go:366:2: field bufferUploadPool is unused (U1000)</
 
         <p>We'll take a look at another unused error variable in a file called <code>database/sql/sql_test.go</code>. The test is <code>TestTxEndBadConn</code>:</p>
 
-        <pre><code>dbQuery := func(endTx func(tx *Tx) error) func() error {
+        <pre><code class="go">dbQuery := func(endTx func(tx *Tx) error) func() error {
 	return func() error {
 		tx, err := db.Begin()
 		if err != nil {
@@ -437,11 +437,11 @@ service/s3/s3manager/upload.go:366:2: field bufferUploadPool is unused (U1000)</
 
         <p>Staticcheck tells us the following:</p>
 
-        <p><pre><code>database/sql/sql_test.go:2888:5: this value of err is never used (SA4006)</code></pre></p>
+        <p><pre><code class="plaintext">database/sql/sql_test.go:2888:5: this value of err is never used (SA4006)</code></pre></p>
 
         <p>This refers to the line <code>err = rows.Close()</code>. We can fix it by checking the error:</p>
 
-        <pre><code>dbQuery := func(endTx func(tx *Tx) error) func() error {
+        <pre><code class="go">dbQuery := func(endTx func(tx *Tx) error) func() error {
 	return func() error {
 		tx, err := db.Begin()
 		if err != nil {
@@ -462,7 +462,7 @@ service/s3/s3manager/upload.go:366:2: field bufferUploadPool is unused (U1000)</
 
         <p>Or perhaps this is more idiomatic:</p>
 
-        <pre><code>dbQuery := func(endTx func(tx *Tx) error) func() error {
+        <pre><code class="go">dbQuery := func(endTx func(tx *Tx) error) func() error {
 	return func() error {
 		tx, err := db.Begin()
 		if err != nil {
