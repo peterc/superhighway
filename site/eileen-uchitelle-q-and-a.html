@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A Q&A with Eileen Uchitelle of GitHub</title>
+  <meta name="description" content="We talk with Eileen Uchitelle, Engineer at GitHub and Rails Core Team Member" />
+  <meta property="og:description" content="We talk with Eileen Uchitelle, Engineer at GitHub and Rails Core Team Member" />
+  <meta property="og:title" content="A Q&A with Eileen Uchitelle" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1575475686/add7rkqcd6gfa8glmzxz.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/eileen-uchitelle-q-and-a" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Ruby Q&A Series</div>
+        <h1>A Q&A with Eileen Uchitelle</h1>
+        <h2>Engineer at GitHub and Rails Core Team Member</h2>
+        <p class="byline">by <a href="https://twitter.com/ruprict">Glenn Goodrich</a>&nbsp;&nbsp;&nbsp;December 4, 2019</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1572528078/lyubxfji50zmctmbtf82.jpg" style="float:left; " />
+
+        <p>Eileen Uchitelle is a Staff Software Engineer on the Ruby Architecture Team at GitHub and a member of the Rails Core team. She's an avid contributor to open source focusing on Rails and its dependencies. Eileen is passionate about scalability, performance, and making open source communities more sustainable and welcoming.</p>
+
+        <p><strong>What is the most exciting thing you've worked on as part of the Rails core team?</strong></p>
+
+        <p>Implementing multiple database support. It's a hard project because there's a lot of stakeholders who want to see the feature implemented — Active Record is one of the original gems included in Rails so there's a lot of legacy code in there, and a lot of input from the community to consider.</p>
+
+        <p>I've been working on this for more than a year and decided to implement it in parts starting with the public facing API and working backwards. This is an interesting way to work on legacy code because often we try to fix the underlying issues first. But implementing the features starting with the rake tasks, then the connection API, then the underlying legacy code made sense in this case because it exposed the sharp edge cases that were always there but hiding away.</p>
+
+        <p><strong>You've worked on some pretty solid teams (Basecamp, GitHub) What, in your opinion, is the secret to a "good" software organization?</strong></p>
+
+        <p>The secret is understanding the difference between a technical problem and an organizational/cultural problem. Technology cannot solve underlying organizational problems and reorganizing teams can't solve technology problems.</p>
+
+        <p><strong>Do you think Rails will be used at GitHub for the foreseeable future?</strong></p>
+
+        <p>You can pry Rails from my cold, dead hands. In all seriousness, it rarely makes sense to rebuild a functioning, working application. It makes more sense to look at your application and ask "what doesn't belong here?" and move that to a service. In some cases functionality is being moved out of the Rails app because it makes sense to do that. For the majority of the application you interact with, it will be Rails for the foreseeable future because there's no good reason for it to be rebuilt in something else.</p>
+
+        <p><strong>Can you tell us how to say your last name? 😁</strong></p>
+
+        <p>Uchitelle was originally Uchitel, which I've been told is the Russian word for "teacher". The name was changed by adding an "le" and the pronunciation is now "You sha tell".</p>
+
+        <p><em>You can read some of Eileen's posts on <a href="https://github.blog">the GitHub blog</a></em>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1575475397/urso0i6fotdtreevtp2u.jpg" alt="Glenn Goodrich" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Glenn Goodrich <a href="https://twitter.com/ruprict" title="Glenn Goodrich on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>A long time software engineer, architect, and nerd. Glenn is a published author that loves things like Ruby, Go, comics, and learning..</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- Go promo -->
+        <a href="https://golangweekly.com" title="Ruby Newsletter"><img src="https://golangweekly.com/images/gopher-keith-57.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Ruby?</h2>
+        <p>Join over 40,000 developers and sign up for Ruby Weekly. A free weekly newsletter about the Ruby programming language.<br><br>→ <a href="https://golangweekly.com" title="Golang Newsletter">rubyweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+<script>hljs.initHighlightingOnLoad();</script>
+<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</html>
