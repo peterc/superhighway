@@ -38,7 +38,7 @@ pre { margin-left: 0; max-width: 90vw; overflow: hidden; overflow-x: scroll; }
 code { font-family: "IBM Plex Mono", menlo, consolas, monaco, monospace; font-size: 0.8em; line-height: 1.25rem;  }
 
 pre code {
-  padding: 1em 0; 
+  padding: 1em 0;
 
 }
 .hljs {
@@ -119,6 +119,12 @@ p > mark {
   font-size: 1.8rem;
   display: inline-block;
   border-bottom: 8px solid #eee;
+}
+
+hr.half_width {
+  border: 1px solid #E2E8F0;
+  margin: 40px 0;
+  width: 50%;
 }
 
 hr.article_end {
@@ -237,14 +243,14 @@ header figure img {
 }
 
 @media only screen and (max-width: 640px) {
-  html { 
+  html {
       font-size: 0.9em;
   }
 }
 
 
 @media only screen and (max-width: 540px) {
-  html { 
+  html {
       font-size: 0.85em;
   }
 }
