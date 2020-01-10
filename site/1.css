@@ -36,8 +36,8 @@ body {
 }
 
 /* Homepage only styles */
-.home header { background: #007ac7; }
-.header-brand { margin: 0 auto; }
+.home header { background: #007ac7; padding: 10px 0; }
+.header-brand { margin: 0 auto; text-align: center; }
 
 /* End of Homepage only styles */
 
