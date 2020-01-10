@@ -40,7 +40,7 @@ body {
 .header-brand { margin: 0 auto; text-align: center; }
 
 .home article { display: block; }
-.home img {width: 100%; height: auto; }
+.home main img {width: 100%; height: auto; }
 
 /* End of Homepage only styles */
 
