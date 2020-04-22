@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A chat with Luca Ferrari</title>
+  <meta name="description" content="We talk to Luca Ferrari about server side Postgres use cases" />
+  <meta property="og:description" content="We talk to Luca Ferrari about server side Postgres use cases" />
+  <meta property="og:title" content="A chat with Luca Ferrari" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1587565293/uwluwry4yqfhsgu6aodh.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/luca-ferrari-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">PostgreSQL Interview Series</div>
+        <h1>A Chat with Luca Ferrari 🐘🇮🇹</h1>
+        <h2>Postgres community organizer, author, adjunct professor, and open source advocate.</h2>
+        <p class="byline"><em>by</em> <a href="https://twitter.com/peterc">Peter Cooper</a>&nbsp;&middot;&nbsp;April 22, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1587564980/b5eadr6jayh1ucge9ao9.jpg" style="float:right; height: 150px; margin: 20px 0px 20px 40px; " />
+
+        <p><a href="https://fluca1978.github.io">Luca Ferrari</a> has had a huge impact on the Postgres community in Italy, having been president of the Italian PostgreSQL Users Group in the past and having helped to organize the popular <a href="https://2020.pgday.it/it/">PGDay.it events</a>. He also blogs frequently about Postgres and wrote <a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide">PostgreSQL 11 Server Side Programming Quick Start Guide</a> for Packt.</p>
+
+        <p>We caught up with him to ask about his book, and server side Postgres use cases in particular:</p>
+
+        <p><strong>For those who use Postgres as a simple database and haven't touched the deeper elements, where do you think they should start?</strong></p>
+
+        <p>There's no single answer to this question, since Postgres is such a huge project with so many features and a very rich community. I have to say that, in my experience, I've never found a project where it cannot fit in: it has so many features and tools that you can achieve pretty much every aim you have. Postgres is somehow like Unix: you cannot touch it as "just a database", you need to commit to its culture to benefit the most out of it. Once you start digging under the hood, you will be fascinated by how elegant its design and implementation is, how stable and solid its engine is and how consistent all the features are together.</p>
+
+        <p>In my classes, I can see that people usually get fascinated by the capabilities of doing server side programming, and that is why I decided to write my book about this topic. Often, people do not expect to be able to embed their Perl, Java, or Python (<em>and so on</em>) libraries directly into PostgreSQL without having to rewrite their business logic in an SQL-like language.</p>
+
+        <p>Another great feature nowdays is the support to JSON within the database, thanks to which PostgreSQL can be used as both a relational database and a 'NoSQL' storage engine, providing a lot of flexibility in your infrastructure.</p>
+
+        <p>Thanks to Foreign Data Wrappers you can connect directly your PostgreSQL cluster to other different databases, including commercial ones, and mix and match queries between PostgreSQL and "remote" databases. Thanks to partitioning you can add also scalability to your cluster, being able to serve huge amount of data. And by putting replication into the picture, you will be able to deploy an high-availability infrastructure with lower cost than any other commercial database.</p>
+
+        <p>One suggestion I always gave is to join immediatly the mailing lists: there are several mailing list that differentiate by topic and amount of traffic. Nevertheless, PostgreSQL mailing list are very active and with very good quality contributors that take care in providing accuate replies to users' questions, that spend time in reproducing errors and edge-cases, and that will to help you. That's a mandatory place where you have to start, in my opinion, to know better the project, its features and its culture.</p>
+
+        <p>I can also elaborate a litte more on this question by anwering not "where to start" but "why to start". Thanks to PostgreSQL and its healthy community, I've learnt a lot about databases and data management. Quite frankly, I have not found a so wide learning experience in other database contexts, especially in the commercial ones where you are supposed to "take it as a belief". Therefore, if you want to learn why a particular PostgreSQL feature is there, you just have to ask!</p>
+
+        <p>Last, allow me to announce that I'm working at another book right now: me and a friend of mine are writing a more general book on PostgreSQL that will try to answer your question by leading the reader thru the main features that make PostgreSQL unique and great.</p>
+
+        <p><strong>Where should the line be drawn between doing things in an external programming language versus within Postgres? For example, data validation, or using procedures vs just coding things in an external language.</strong></p>
+
+        <p>Often the right choice is to place business logic near the data it refers to, that is within the database itself. However, there are several things to take into account including the developers' experience and the expresiveness of SQL-like derived languages like pl/PgSQL. The obvious answer is that there is not a silver bullet, and while keeping the business logic within the database seems the rightmost choice, it could result in a too much complex effort, making therefore simpler to implement the logic in an external programming language.</p>
+
+        <p>Personally, I think that today there is the habit of letting ORMs (Object Relational Mappers) do the most of the database interaction, reducing the database to a "simple storage". Of course, databases can do a lot more, and PostgreSQL in particular can help you migrate and embed your own business logic into the database itself. I have helped a few companies in embedding their own Java library into PostgreSQL, as an example, resulting in a more robust and coherent way to access the data (the real value) without any regard of the application they were using. Because once you start having data, you will soon find that such data is required by multiple applications in different technologies and on different platforms, so that implementing the same business logic rules over and over becomes a huge effort; on the other hand, moving such logic within the database simplifies and keep uniform the way your data is manipulated.</p>
+
+        <p>The last thing that I usually point out is about latency: it does not make sense to enforce rule into the database and make any data validation a trip to the database and back. Validation must be enforced on the database, as obvious, but should be replicated into the application if this helps saving network latency and useless data flow.</p>
+
+        <p><strong>If you had to pick just ONE element of Postgres server side programming that someone had to learn in real detail, what would you pick and why? (e.g. triggers, stored procedures..)</strong></p>
+
+        <p>Stored procedures, called FUNCTIONs in PostgreSQL. They serve as a common base for triggers and are very similar to routines, therefore allowing you to build more complex pieces into your own cluster. As you can imagine, understanding stored procedure is not just a matter of syntax, rather a matter of understanding their context (for example how to write a function that can be used into an index), how the planner will evaluate the cost of executing the function, and how to optimize the input and output of data. Moreover, once you have learnt the common way of defining functions, you can go deeper and write your own native functions using for example the C language. This is more complex, but thanks to the extensibility of PostgreSQL is not an impossible task and can help you migrating more and more code into the database, or just implement those particular feature you have not found yet in the PostgreSQL ecosystem. And once you have created a new feature, please do contribute it back so that other people can use it!</p>
+
+        <p><strong>Finally, what gave you the idea to write "PostgreSQL 11 Server Side Programming"?</strong></p>
+
+        <p>It's hard to say! I never thougth about writing a whole book by myself, even if I'm a avid reader of technical books. However, in 2018 I was in the middle of two PostgreSQL related courses, when a friend of mine pushed me to the idea of writing a book. I was never scared about writing and committing to "long" projects, so I decided it could have been an interesting project. And quite frankly, it was a very interesting project. I'm not saying that it was easy, and on the other hand that it was too hard for other people to do the same, but as you can imagine writing a book involves a lot of "boring" activities like rephrasing, adjusting details so that all the captions, listings, and pictures look coherent, and so on. Luckily, having been in the university field so long did provde me a good habit in being precise at writing documents, and so it was how the book was born.</p>
+
+        <p>Of course, I would not have done any book with asubject I don't care about, but PostgreSQL has been a passion and a job for such a while that I do really care about. And this is a very important detail: when you have a passion for yoru job, making it outstanding is a natural process!</p>
+
+        <p>I have to confess that, unluckily, my eyes are suffering all kind of diseases, and I have already lost one and I'm loosing the other. In this context, having the capability to write a book has been a huge achievemnt of mines.</p>
+
+        <!--<p><em>You can read some of Eileen's posts on <a href="https://github.blog">the GitHub blog</a></em>.</p>-->
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg" alt="Peter Cooper" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Peter Cooper <a href="https://twitter.com/peterc" title="Peter Cooper on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 450,000+ readers.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- promo -->
+        <a href="https://postgresweekly.com" title="PostgreSQL Newsletter"><img src="https://superhighway.dev/images/v1587565735/ifdurvyosa9jiyhuho0b.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Postgres?</h2>
+        <p>Join over 15,000 others and sign up for Postgres Weekly. A free weekly newsletter round-up of PostgreSQL news, tools and tutorials.<br><br>→ <a href="https://postgresweekly.com" title="Postgres Newsletter">postgresweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</html>
