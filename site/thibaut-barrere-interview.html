@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A chat with Thibaut Barrère</title>
+  <meta name="description" content="We talk to Thibaut Barrere, creator of Kiba ETL" />
+  <meta property="og:description" content="We talk to Thibaut Barrere, creator of Kiba ETL" />
+  <meta property="og:title" content="A chat with Thibaut Barrère" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1588683602/dtpxk9gioqocrrf3exxd.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/thibaut-barrere-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Ruby Interview Series</div>
+        <h1>A Chat with Thibaut Barrère</h1>
+        <h2>Long time Rubyist and Kiba maintainer.</h2>
+        <p class="byline">by <a href="https://twitter.com/ruprict">Glenn Goodrich</a>&nbsp;&nbsp;&nbsp;April 30, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1588067181/bcabcrhh9w4o34ao1dso.png" style="float:right; height: 180px; margin: 20px 0px 20px 40px; " />
+
+        <p>Thibaut Barrère is a long-time Rubyist and data engineer who built and maintains the popular Extract, Transform, and Load (ETL) framework <a href="https://github.com/thbar/kiba">Kiba</a>. </p>
+
+        <p>We asked him some questions about his work:</p>
+
+        <p><strong>What inspired you to create Kiba?</strong></p>
+
+        <p>A lot of my work since ~2005 has been focused on data integration (making systems speak together), data aggregation etc. I sometimes used GUI-based tools like Microsoft SSIS which, while powerful, are quite far from the coding experience.</p>
+
+        <p>I was already using Ruby at that time, and was happy to discover <a href="https://github.com/activewarehouse/activewarehouse-etl">activewarehouse-etl</a> (<em>maintained by Anthony Eden, who runs DNSimple now</em>) providing a Ruby DSL to declare data pipelines. I used it for a while with very good success to implement data extractions and business intelligence ETL, and ultimately took over the maintenance.</p>
+
+        <p>In the long run, though (as I explained in <a href="https://www.youtube.com/watch?v=yv1EnYTXIeA">a recent Paris.rb talk</a>), the balance between the the cost of OSS maintenance and the usability for my billable and non-billable use-cases proved to be not good enough, which made me decide to stop the maintenance, sadly.</p>
+
+        <p>I still wanted to use Ruby to write data pipelines, but I needed to cover more use-cases and reduce the OSS maintenance burden at the same time. This ultimately led me to write and share (in 2015) <a href="https://github.com/thbar/kiba">Kiba ETL</a>, a focused DSL for declarative processing, matching those criterias.</p>
+
+        <p><strong>Do you find yourself adding more features while in quarantine?</strong></p>
+
+        <p>Before the quarantine, I directed my Kiba bandwith and focus on finalizing Kiba v3 and rewriting the documentation from scratch, to properly encourage best practices I’ve been discovering. I also created experimental branches for Ruby 2.7/2.8 keywords.</p>
+
+        <p>During the quarantine, I've reduced client work and OSS work too, to focus on shipping Kiba Pro v2 (which I’ll announce shortly officially). I’ve extracted and generalized (from real-life projects) very useful components, such as a “batch SQL lookup” (useful when replacing relationships keys during data migrations and datawarehouses sync code, in batch rather than row by row), a “file lock” to ensure a single job runs at once, and a “parallel transform” to achieve easy concurrency for things like HTTP queries.</p>
+
+        <p><strong>What's the wildest ETL that you've encountered?</strong></p>
+
+        <p>Getting the data out of a system which is actively not acting in that direction is always a bit wild.. One can see all types of fancy stuff on the field. For instance, it is not uncommon to have an ETL process start a headless browser, jump through pages, just to get to the CSV/PDF/Excel file that you will then use as your data source!</p>
+
+        <p>You can also end up having to figure out ways to read or write very old file formats at times. Recently I wrote a Kiba component to generate a COBOL delimited file, for instance. In large companies, a very widely used I/O is good old SFTP, far away from modern APIs and formats.</p>
+
+        <p><strong>Can you tell us how to say your last name? 😉</strong></p>
+
+        <p>I had to deploy a page to my blog to answer that question properly 🙂. You’ll <a href="https://thibautbarrere.com/how-to-pronounce/" title="How to pronounce Thibaut Barrere">find out how to say my name here</a>.</p>
+
+        <p style="border-left: 4px solid #E2E8F0; padding-left: 20px; color: #666;"><em>Merci Thibaut!</em> You can read some of Thibaut's posts on his <a href="https://thibautbarrere.com">blog</a> and find out more about <a href="https://www.kiba-etl.org">Kiba ETL here</a>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1575476433/pefiruwmpukhqeamerd2.jpg" alt="Glenn Goodrich" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Glenn Goodrich <a href="https://twitter.com/ruprict" title="Glenn Goodrich on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>A long time software engineer, architect, and nerd. Glenn is a published author that loves things like Ruby, Go, comics, and learning..</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- Go promo -->
+        <a href="https://rubyweekly.com" title="Ruby Newsletter"><img src="https://superhighway.dev/images/v1575476504/okyhcsniubt7qluqutbg.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Ruby?</h2>
+        <p>Join over 40,000 developers and sign up for Ruby Weekly. A free weekly newsletter about the Ruby programming language.<br><br>→ <a href="https://rubyweekly.com" title="Ruby Newsletter">rubyweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</html>
