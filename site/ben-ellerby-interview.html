@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A chat with Ben Ellerby</title>
+  <meta name="description" content="We talk to Serverless aficionado and VP of Engineering at Theodo, Ben Ellerby" />
+  <meta property="og:description" content="We talk to Serverless aficionado and VP of Engineering at Theodo, Ben Ellerby" />
+  <meta property="og:title" content="A chat with Ben Ellerby" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1590400703/xeprnxzqttcirvirzuvp.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/ben-ellerby-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Serverless Q&A</div>
+        <h1>A Chat with Ben Ellerby</h1>
+        <h2>Serverless pundit and VP of Engineering at Theodo</h2>
+        <p class="byline">by <a href="https://twitter.com/peterc">Peter Cooper</a>&nbsp;&middot;&nbsp;May 22, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1589839137/mx2gl8pjvven15tgzjrz.jpg" style="float:right; height: 180px; margin: 20px 0px 20px 40px; " />
+
+        <p>Ben Ellerby is the VP of Engineering at <a href="https://www.theodo.co.uk">Theodo</a> and an AWS Serverless Hero. He's the editor of the <a href="https://medium.com/serverless-transformation">Serverless Transformation blog</a> and <a href="https://anchor.fm/serverless-transformation">podcast</a> and works to help improve Serverless adoption in startups and large organisations. He's part of the team that developed <a href="https://medium.com/serverless-transformation/announcing-sls-dev-tools-v1-0-0-11e9ab01868e">sls-dev-tools</a> which we've featured recently.</p>
+
+        <p>We asked a few questions about his work:</p>
+
+        <p><strong>What's the biggest pain point of working with serverless that you're seeing?</strong></p>
+
+        <p>Education. Serverless, even as a term, is not widely understood and best practices are still emergent. Serverless is such a big space that people need guidance and keeping up to date with emergent best practices can be a full-time job. This was also the rationale behind the recent <a href="https://medium.com/serverless-transformation/how-to-succeed-with-serverless-automate-best-practices-2a41894721a3">sls-dev-tools Guardian addition</a> which aims to automate best practice checks for teams adopting serverless. At the moment the list of checks is limited, but we're testing out new ones internally and aim to build this with the community.</p>
+
+        <p><strong><em>"Think Chrome Dev Tools but for Serverless"</em> paints an evocative picture, but what do you really mean by this?</strong></p>
+
+        <p><a href="https://medium.com/serverless-transformation/announcing-sls-dev-tools-v1-0-0-11e9ab01868e">sls-dev-tools</a> improves the Developer-Experience (DX) of building state-of-the-art serverless apps. It's complementary to IaC tools like Serverless Framework, SAM or CloudFormation - and aims to guide not just provide all possible metrics and actions.</p>
+
+        <p>As well as sls-dev-tools HQ, sls-dev-tools Guardian has emerged from our initial battle scars of missing best practices. sls-dev-tools runs an automated audit over deployed resources and their configuration to spot common mistakes and anti-patterns. For instance, many teams forget to properly configure their Lambda memory when they just start using Serverless. This can have an impact on performance and cost.</p>
+
+        <p>sls-dev-tools is for the community, by the community and Issues, Feedback, Stars and PRs are very welcome.</p>
+
+        <p><strong>What is "EventBridge Storming" and why do you think developers should look into it?</strong></p>
+
+        <p><a href="https://aws.amazon.com/eventbridge/">Amazon EventBridge</a> is forming the backbone of most of our microservice architectures. Although microservice communication gets easier with EventBridge, microservices are still not easy. The understanding of what makes a good microservice has not changed much since the Service-Oriented Architecture days, but it does not mean it's easy to fulfil those criteria.</p>
+
+        <p>Domain-Driven Design has established tools that can help, and 'Event Storming' is a useful extension of DDD. EventBridge Storming takes this a step further and lays out an 8 step guide for teams to collaboratively build out their serverless microservice structure and underlying EventBridge registry Schema. A lot of teams are excited to use tooling like EventBridge but don't know how to "do it correctly". EventBridge Storming aims to be a step by step guide and is a workshop I activity run with all our serverless projects.</p>
+
+        <p style="border-left: 4px solid #E2E8F0; padding-left: 20px; color: #666;"><em>You can find Ben on Twitter <a href="https://twitter.com/EllerbyBen">@EllerbyBen</a>, on the <a href="https://medium.com/serverless-transformation">Serverless Transformation blog</a>, or busy hosting the <a href="https://anchor.fm/serverless-transformation">Serverless Transformation podcast</a>.</em>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg" alt="Peter Cooper" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Peter Cooper <a href="https://twitter.com/peterc" title="Peter Cooper on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 480,000+ readers.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- promo -->
+        <a href="https://serverless.email" title="Serverless Status"><img src="https://serverless.email/images/serverlesskeith.png"></a>
+        <div class="promo_copy">
+        <h2>All things Serverless</h2>
+        <p>Join over 6,000 developers and sign up for Serverless Status. A free weekly newsletter covering serverless and function-as-a-service (FaaS) architectures and platforms including AWS Lambda and Azure Functions.<br><br>→ <a href="https://serverless.email" title="Serverless Newsletter">serverless.email</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script>
+<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+</html>
