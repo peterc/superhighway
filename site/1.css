@@ -39,8 +39,73 @@ body {
 .home header { background: #007ac7; padding: 10px 0; margin: 0; }
 .header-brand { margin: 0 auto; text-align: center; }
 
-.home article { display: block; }
-.home main img {width: 100%; height: auto; }
+.home article { display: grid; margin: 0 auto; grid-template-columns: 1fr 2fr; grid-column-gap: 20px; margin-bottom: 30px; }
+.home .top-story img {width: 100%; height: auto; }
+
+article img { height: 100px; width: 100%; object-fit: cover; }
+
+article.top-story { display: grid; margin: 0 auto; grid-template-rows: auto 1fr; grid-template-columns: none; }
+
+.top-story h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-story h1 + h2 {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+
+article .sub {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+article.top-story .sub {
+  font-size: 1rem;
+  margin: 10px 0 5px 0;
+}
+
+
+
+.top-story .author_meta {
+  grid-template-columns: 12% 1fr;
+  grid-column-gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  border-bottom: 4px solid #eee;
+}
+
+article h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+article .byline, .byline a {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.top-story .byline, .top-story .byline a {
+  font-size: 1rem;
+}
+
+.article_meta { display: grid; margin-top -8px; align-content: center; line-height: 1.5rem;}
 
 /* End of Homepage only styles */
 
@@ -264,3 +329,8 @@ header figure img {
       font-size: 0.85em;
   }
 }
+
+@media (min-width: 768px) {
+  article.top-story { width: 80%; grid-template-rows: none; grid-template-columns: minmax(300px, 2fr) 3fr; border-bottom: 4px solid #eee; margin-top: 40px; margin-bottom: 40px; padding-bottom: 30px; }
+  .top-story .author_meta { grid-template-columns: 10% 1fr; border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+ }
