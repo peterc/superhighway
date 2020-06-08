@@ -63,7 +63,7 @@ body {
   border-bottom: none;
 }
 
-article .sub {
+.home article .sub {
   text-transform: uppercase;
   opacity: 0.7;
   font-weight: 600;
@@ -71,12 +71,10 @@ article .sub {
   margin: 0;
 }
 
-article.top-story .sub {
+.home article.top-story .sub {
   font-size: 1rem;
   margin: 10px 0 5px 0;
 }
-
-
 
 .top-story .author_meta {
   grid-template-columns: 12% 1fr;
