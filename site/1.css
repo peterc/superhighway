@@ -85,7 +85,7 @@ body {
   border-bottom: 4px solid #eee;
 }
 
-article h1 {
+.home article h1 {
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 400;
@@ -93,7 +93,7 @@ article h1 {
   margin-bottom: 0;
 }
 
-article .byline, .byline a {
+.home article .byline, .byline a {
   font-size: 0.8rem;
   color: #666;
   margin: 0;
