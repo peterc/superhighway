@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A Q&A with Valeri Karpov</title>
+  <meta name="description" content="We talk to The Code Barbarian about his latest book, Mastering Mongoose" />
+  <meta property="og:description" content="We talk to The Code Barbarian about his latest book, Mastering Mongoose" />
+  <meta property="og:title" content="A Q&A with Valeri Karpov" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1595928551/uoiz45gdcxryg5luleej.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/valeri-karpov-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Meet the Author</div>
+        <h1>A Q&A with Valeri Karpov</h1>
+        <h2>JavaScript book author and trainer</h2>
+        <p class="byline">by <a href="https://twitter.com/peterc">Peter Cooper</a>&nbsp;&middot;&nbsp;July 29, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1542838790/cz0u3krahfubcselwlkc.png" style="float:right; height: 180px; margin: 20px 0px 20px 40px; " />
+
+        <p>Valeri, also known as <a href="http://thecodebarbarian.com/">The Code Barbarian</a>, is a prolific author of JavaScript tutorials and books and was also the person to coin the term MEAN (as in the MongoDB, Express.js, Angular and Node.js stack). To celebrate the release of his new book, <a href="https://masteringjs.io/ebooks/mastering-mongoose-node-weekly">Mastering Mongoose</a>, we've asked him a few questions:</p>
+
+        <p><strong>Why should MongoDB still be considered for new apps when relational systems like Postgres have added so many NoSQL features in recent years?</strong></p>
+
+        <a href="https://masteringjs.io/ebooks/mastering-mongoose-node-weekly" ><img src="https://superhighway.dev/images/v1595928264/zd0sugn0wfwsiiljpbn1.jpg" style="float:right; height: 300px; margin: 0px 0px 20px 40px; " alt="Mastering Mongoose: The Official Mongoose eBook" /></a>
+
+        <p>From what I've seen, MongoDB's overall developer experience is far ahead of traditional relational systems. Many RDBMS's have added support for querying and indexing JSON objects in recent years, but MongoDB's query language makes handling deeply nested objects feel smooth and natural, especially with <a href="https://thecodebarbarian.com/a-nodejs-perspective-on-mongodb-36-array-filters.html">array filters in MongoDB 3.6</a>.</p>
+
+        <p>As a developer, I love working with change streams and MongoDB's built-in geospatial queries and indexes. As a database operator, I don't know how I ever ran a production app without point-in-time backups and zero-downtime upgrades.</p>
+
+        <p><strong>What does Mongoose give you that using the MongoDB client library directly doesn't?</strong></p>
+
+      <p>Mongoose adds many of the features you might expect from a database framework: middleware, plugins, change tracking, data casting, and schema validation. Mongoose is like the MongoDB analog to an ORM: it lets you work with MongoDB using object-oriented programming, and fits neatly as the "M" in MVC. But, unlike an ORM, Mongoose does very little data transformation because of MongoDB's flexible document structure. With Mongoose, how your model instances look Node.js is almost identical to how your documents look in MongoDB.</p>
+
+      <p><strong>If Mongoose provides structure and makes things easier when using MongoDB from Node, what gap does your book fill?</strong></p>
+
+      <p>Writing docs requires a balancing act between providing enough structure vs being too opinionated. For example, when building Mongoose apps, I recommend avoiding using the aggregation framework and using middleware over setters when you need a setter that affects multiple properties. However, plenty of developers use these patterns and the online docs should help developers get unstuck fast, so I don't want to omit them from the docs or add a warning that can come off as pedantic.</p>
+
+      <p><strong>What's the hardest part of self publishing your own technical books?</strong></p>
+
+      <p>The hardest part of writing is coming up with code samples. A great code sample is short, clean, and provides more insight than hundreds of words of prose explanation. Just copy/pasting code from an app typically leads to a bad example: there's often too many implementation-specific details in a real app to make the example sufficiently isolated.</p>
+
+      <p>On the other hand, pseudo-code with a lot of "your code here" comments often is too hand-wavey to provide any real insight. That's why I spend most of my time writing obsessing over the details of code samples, and use <a href="http://npmjs.com/package/acquit">a dedicated npm module</a> to enable testing the code samples in Mocha.</p>
+
+      <p>The hardest part of self publishing overall is getting the word out. Like many developers, I'm introverted, so promoting my work has always been a challenge. Thanks to Peter and CooperPress for giving me this opportunity and making that part of self-publishing a little easier!</p>
+
+      <p style="border-left: 4px solid #E2E8F0; padding-left: 20px; color: #666;"><em>You can find Valeri on Twitter <a href="https://twitter.com/code_barbarian">@code_barbarian</a> or learn more about his <a href="https://masteringjs.io/ebooks/mastering-mongoose-node-weekly">Mastering Mongoose ebook here</a>.</em>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg" alt="Peter Cooper" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Peter Cooper <a href="https://twitter.com/peterc" title="Peter Cooper on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 480,000+ readers.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- promo -->
+        <a href="https://nodeweekly.com" title="Node Weekly"><img src="https://superhighway.dev/images/v1595927985/xc8u7xp6bd9x8b92pjln.png"></a>
+        <div class="promo_copy">
+        <h2>All things Node</h2>
+        <p>Join nearly 50,000 developers and sign up for Node Weekly. A free, once–weekly email round-up of Node.js news and articles.<br><br>→ <a href="https://nodeweekly.com" title="Node.js Newsletter">nodeweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="https://superhighway.dev">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+</html>
