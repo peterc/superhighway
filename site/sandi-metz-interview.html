@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A Q&A with Sandi Metz</title>
+  <meta name="description" content="We talk to the author of Practical Object-Oriented Design in Ruby and 99 Bottles of OOP." />
+  <meta property="og:description" content="We talk to the author of Practical Object-Oriented Design in Ruby and 99 Bottles of OOP." />
+  <meta property="og:title" content="A Q&A with Sandi Metz" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1598370597/bvnlfnfjd4ti7q2esw7y.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/sandi-metz-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Meet the Author</div>
+        <h1>A Q&A with Sandi Metz</h1>
+        <h2>Author of Practical Object-Oriented Design in Ruby and 99 Bottles of OOP.</h2>
+        <p class="byline">by <a href="https://twitter.com/ruprict">Glenn Goodrich</a>&nbsp;&middot;&nbsp;August 27, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1598360595/vdg4snbfbus7nbnla2oo.jpg" style="float:right; height: 180px; margin: 20px 0px 20px 40px; " />
+
+        <p>Sandi Metz is a prolific Rubyist and author that has penned two of the most well-received books on object-oriented programming in recent memory. She also speaks, consults, and teaches, giving us almost 99 ways to benefit from her wisdom.</p>
+
+        <p><strong>What were the biggest changes incorporated into the 2nd edition of 99 Bottles of OOP?</strong></p>
+
+        <p>The 1st Edition used the 99 Bottles problem as a jumping off point to explore a bunch of Object-Oriented (OO) ideas. It generally solved design problems by identifying code smells and following refactoring recipes. It emphasized a concise programming style where the only code you're allowed to write is that which the recipes require. (Note: this is actually a lot more fun than you might imagine.)</p>
+
+        <p>Many programmers don't have firsthand experience with how detailed and helpful refactoring recipes are. While the 1st Edition discussed lots of fundamental OO ideas, it's overall emphasis was on satisfying new requirements by determining which parts of the code needed to vary, isolating those parts using refactoring recipes, and then creating new variants to fulfil the requirements.</p>
+
+        <p>The <a href="https://sandimetz.com/99bottles">2nd Edition</a> moves up a level of abstraction and addresses programmer volition. It grapples with the "This code works, but I don't think it's good enough" problem. It gives concrete advice about how to decide if making a voluntary change to improve code is justified. The overall theme of the 2nd Edition is loosening coupling to allow for unexpected future change. It thoroughly addresses dependency injection, separating object creation and object use, and following the Law of Demeter, all in service of loose coupling between objects.</p>
+
+        <p><strong>What do you think about the more functional bits, like pattern matching, being added to Ruby?</strong></p>
+
+        <p>Pattern matching is cool, and good OO is very functional.</p>
+
+        <p>If you think of pattern matching as a nicer kind of conditional, then one (cough) might wonder if making conditionals easier to write in Ruby will entice folks to use them in situations where they're better served by creating new objects instead.</p>
+
+        <p>This might happen, but we'll recover if it does. Everything I know I figured out by abusing some technique, and then learning from my mistakes. I suspect this will be true for Pattern matching. There are problems for which it's a great solution, and I have confidence that with practice we'll figure out how best to use it.</p>
+
+      <p><strong>Are you excited about anything coming in Ruby 3?</strong></p>
+
+      <p>Or perhaps everything? The speed and concurrency improvements are amazing. Also, as someone who would love a little magical type safety but finds type declaration syntax distracting, I'm looking forward to built-in support for static analysis tools. The thought that I'll be able to pretty much write Ruby as I always have, but at the same time effortlessly convey the API of a duck type, makes me giddy.</p>
+
+      <p><strong>If you could only teach a single principle of OOD, what would it be?</strong></p>
+
+      <p>Can I have two? Hmm, now that I think about it, they're really the same thing — One, loose coupling, and two, object ignorance.</p>
+
+      <p>By object ignorance I mean an OO programming style where you strive to make objects know as little about one another as possible. In more formal terms this means reducing the number of dependencies in each object. Objects with fewer dependencies know less about their surroundings and so require a smaller context. An object that's context independent can be reused in novel ways.</p>
+
+      <p>You can tell how much context an object requires by looking at the setup needed to test it. Piles of setup indicate lots of required context. The object can only be used if the world is just so. Little or no setup indicates that the object is independent of context. These objects are amenable to being used in unexpected situations.</p>
+
+      <p>An object that's context independent is loosely coupled to the other parts of your application. The price of loose coupling is that you can't look at the source for any individual object and understand the context in which it's used. The benefit of loose coupling is that changes to the arrangement of groups of objects doesn't break everything in the app.</p>
+
+      <p>In my experience, apps always change, frequently in unexpected ways. This means the most cost effective way to write code is to strive for loose coupling everywhere, so you can make a change anywhere.</p>
+
+      <p><strong>What's next? Is there a 3rd edition of POODR coming?</strong></p>
+
+      <p>I (along with <a href="http://kytrinyx.com/">Katrina Owen</a> and <a href="https://tj.stank.us/">TJ Stankus</a>) are still fully occupied with <a href="https://sandimetz.com/99bottles">99 Bottles of OOP</a>. It's already available in Ruby or JavaScript, and we're very close to finishing the PHP edition.  Next in the queue is Python.</p>
+
+      <p>Once these are complete, we're thinking of taking on a statically typed language (Java, Swift, TypeScript, etc). It's hard to predict how that will turn out, but it'll definitely be interesting to try.</p>
+
+      <p>In the next few weeks I'm also recording my Practical Object-Oriented Design course as a series of videos. In late 2019 I committed to drastically reducing my airline flights before 2021 (because planet), and Covid arrived just in time to ensure I fulfilled that promise.</p>
+
+      <p style="border-left: 4px solid #E2E8F0; padding-left: 20px; color: #666;"><em>Folks who'd like to keep up with these projects can sign-up for Sandi's <a href="https://sandimetz.com/subscribe">Chainline Newsletter</a> or <a href="https://twitter.com/sandimetz">follow her</a> on Twitter.</em>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1575476433/pefiruwmpukhqeamerd2.jpg" alt="Glenn Goodrich" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Glenn Goodrich <a href="https://twitter.com/ruprict" title="Glenn Goodrich on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>A long time software engineer, architect, and nerd. Glenn is a published author that loves things like Ruby, Go, comics, and learning.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- Go promo -->
+        <a href="https://rubyweekly.com" title="Ruby Newsletter"><img src="https://superhighway.dev/images/v1575476504/okyhcsniubt7qluqutbg.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Ruby?</h2>
+        <p>Join over 40,000 developers and sign up for Ruby Weekly. A free weekly newsletter about the Ruby programming language.<br><br>→ <a href="https://rubyweekly.com" title="Ruby Newsletter">rubyweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="https://superhighway.dev">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+</html>
