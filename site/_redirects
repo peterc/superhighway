@@ -1,3 +1,4 @@
 /example2 /example 200
 /images/*  https://res.cloudinary.com/cpress/image/upload/:splat  200
 /*   /404.html   404
+/black-friday-developer-deals-2020 /black-friday-developer-things-2020
