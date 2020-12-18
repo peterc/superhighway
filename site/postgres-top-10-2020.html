@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>The top Postgres links of 2020</title>
+  <meta name="description" content="Looking back at what proved popular in the Postgres world this year." />
+  <meta property="og:description" content="Looking back at what proved popular in the Postgres world this year." />
+  <meta property="og:title" content="The top Postgres links of 2020" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1608292481/dl849dvgbrrewer8t5l7.jpg" />
+  <meta property="og:url" content="https://superhighway.dev/react-top-10-2020" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <div style="background: url(https://superhighway.dev/images/v1608292481/dl849dvgbrrewer8t5l7.jpg), #369cee; height: 25vw; background-size: cover; background-position: center;"></div>
+      <header>
+        <div class="sub">Year in Review</div>
+        <h1>The top Postgres links of 2020</h1>
+        <h2>A look back at what proved popular within the Postgres community this year.</h2>
+        <p class="byline">by <a href="https://twitter.com/peterc">Peter Cooper</a>&nbsp;&middot;&nbsp;December 18, 2020</p>
+      </header>
+
+      <div class="content">
+
+        <p>As 2020 <em>finally</em> draws to a close, I thought it would be interesting to take a quick look and highlight some of the most popular PostgreSQL links of 2020.</p>
+
+        <p>As such, here's a list of the top ten links shared in <a href="https://postgresweekly.com" title="PostgreSQL Newsletter">Postgres Weekly</a>, an email newsletter reaching over 15,000 PG fans.</p>
+
+        <h1>🐘 The top ten PostgreSQL links of 2020:</h1>
+
+        <p><strong><a href="https://jlongster.com/how-one-word-postgresql-performance">How One Word Unlocked a 9x Performance Improvement</a></strong></p>
+
+        <p>The creator of a personal finance tool experienced a user whose data caused a flood of <code>INSERT</code>s large enough to cause a problem. Here’s the tale of how a simple <code>RETURNING</code> clause enabled a huge optimization in the process.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791">10 Things I Hate About Postgres</a></strong></p>
+
+        <p>Earlier in the year we shared an upbeat <a href="https://www.2ndquadrant.com/en/blog/postgresql-is-the-worlds-best-database/">‘Postgres is the world’s best database’</a> item in the newsletter, but it seems readers like to take the rough with the smooth and clicked a lot more on <em>this</em> item instead ;-)  Rick reminds us that no software is perfect and that even Postgres has flaws. 🤭</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://momjian.us/main/blogs/pgblog/2020.html#August_10_2020">Postgres Pagination Approaches</a></strong></p>
+
+        <p>Most webapp users don’t want to see a list of thousands of items at once, so pagination is often adopted as a way to ‘page’ through a larger group of items in more manageable chunks. There are several ways to achieve this with Postgres with various tradeoffs.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://www.percona.com/blog/2020/07/28/migrating-to-postgresql-version-13-incompatibilities-you-should-be-aware-of/">Postgres 13 Incompatibilities To Be Be Aware Of</a></strong></p>
+
+        <p>Postgres 13 was released this year and while Postgres <em>tends</em> to be reasonably backward compatible over time, there are some changes worth being aware of before making a move, if you haven't&nbsp;yet.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://info.crunchydata.com/blog/postgresql-benchmarks-apple-arm-m1-macbook-pro-2020">How Does Postgres Fare on the Arm-Based M1 MacBook Pro?</a></strong></p>
+
+        <p>Apple has begun to roll out machines using its own Arm-based M1 CPUs and the initial performance improvements <a href="https://www.singhkays.com/blog/apple-silicon-m1-black-magic/">have been impressive.</a> But while macOS runs faster than ever, what about Postgres? Spoiler alert.. <em>WOW!</em></p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://www.sqlstyle.guide/">A SQL Style Guide</a></strong></p>
+
+        <p>Want to ensure you have legible and maintainable queries? This handy SQL style guide from Simon Holywell remains a valuable resource.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://quip.com/2gwZArKuWk7W">The Best Medium-Hard Data Analyst SQL Interview Questions</a></strong></p>
+
+        <p>This article begins with a quote: <em>“The first 70% of SQL is pretty straightforward but the remaining 30% can be pretty tricky.”</em> True! This popular article focuses on the tricky ‘medium-hard’ area that few tutorials venture into.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://t.co/vLsE4PliwQ">Recursive SQL Queries with PostgreSQL</a></strong></p>
+
+        <p>This post from March explores the lesser-known Common Table Expression SQL feature — which makes it possible to write recursive queries.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://www.2ndquadrant.com/en/blog/7-best-practice-tips-for-postgresql-bulk-data-loading/">Seven Best Practice Tips for PostgreSQL Bulk Data Loading</a></strong></p>
+
+        <p>Anyone who's managed a database has needed to import a large quantity of data at some point, and anyone who's tried this has rapidly discovered there are both fast and slow ways to do it. 😉 This post from Sadequl Hussain looks at some some best practices for bulk importing data into Postgres databases.</p>
+
+        <hr class="half_width">
+
+        <p><strong><a href="https://www.cybertec-postgresql.com/en/binary-data-performance-in-postgresql/">Comparing Binary Data Performance in Postgres</a></strong></p>
+
+        <p>You can store large binary blogs outside your database and reference them, store them as 'large objects', or use <a href="https://www.postgresql.org/docs/9.0/datatype-binary.html">bytea</a> byte arrays. How do they compare? Laurenz Albe outlines why this is an important thing to consider if you do have binary blobs flying around in your data model.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg" alt="Peter Cooper" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Peter Cooper <a href="https://twitter.com/peterc" title="Peter Cooper on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 500,000+ readers.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- Promo -->
+        <a href="https://postgresweekly.com" title="PostgreSQL Newsletter"><img src="https://postgresweekly.com/images/Postgres-Keith.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Postgres?</h2>
+        <p>Join over 15,000 developers and sign up for Postgres Weekly. A free weekly newsletter about the PostgreSQL relational database management system.<br><br>→ <a href="https://postgresweekly.com" title="PostgreSQL Newsletter">postgresweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="https://superhighway.dev">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+</html>
