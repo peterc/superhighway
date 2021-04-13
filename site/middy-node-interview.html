@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Things to change -->
+  <title>A Chat with Will Farrell & Luciano Mammino of Middy</title>
+  <meta name="description" content="We talk to the creator and maintainer behind this Node.js middleware engine" />
+  <meta property="og:description" content="We talk to the creator and maintainer behind this Node.js middleware engine" />
+  <meta property="og:title" content="A Chat with Will Farrell & Luciano Mammino of Middy" />
+  <meta property="og:image" content="https://superhighway.dev/images/v1618329519/smgmoamnqkkha70kkwa2.png" />
+  <meta property="og:url" content="https://superhighway.dev/middy-node-interview" />
+  <meta name="twitter:site" content="@SUPERHlGHWAY" />
+
+  <!-- Things that can stay fixed -->
+  <meta property="og:site_name" content="Superhighway" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+</head>
+
+<body class="article" id="top">
+
+    <article>
+      <header>
+        <div class="sub">Node Interview Series</div>
+        <h1>A Chat with Will Farrell & Luciano Mammino of Middy</h1>
+        <h2>🛵 The Node.js middleware engine for AWS Lambda</h2>
+        <p class="byline"><em>by</em> <a href="https://twitter.com/peterc">Peter Cooper</a>&nbsp;&middot;&nbsp;April 14, 2021</p>
+      </header>
+
+      <div class="content">
+
+        <img src="https://superhighway.dev/images/v1618323580/pickty7b8kqc4ddoxw3o.png" style="float:right; height: 180px; margin: 20px 0px 20px 40px; " />
+
+        <p><a href="https://middy.js.org">Middy</a> is a simple middleware engine that allows you to simplify your AWS Lambda code when using Node.js.</p>
+
+        <p>We caught up with the project's creator Luciano Mammino and maintainer Will Farrell to ask them a few questions. They stared by explaning how the project came to be:</p>
+
+        <p>The idea of Middy started in 2016 when Luciano was working with a company building everything on AWS using serverless technologies. We were among the first early adopters of these technologies and AWS invited us to speak at AWS Summit 2017 in London and present our serverless use cases.</p>
+
+<p>Lambda was one of the services we used the most to write REST APIs and data integration pipelines. At some point, we realised that our code had a lot of duplication and inconsistencies from one function to another and it was getting increasingly harder to keep our quality bar high. That's when we understood that we were missing an abstraction such as the one you could get with frameworks like Express that would allow us to easily reuse pieces of repetitive business logic: validation, data serialization and deserialization, authentication and authorization, etc.</p>
+
+<p>We decided to invest in creating that abstraction layer and that helped us to simplify our codebase, reduce the amount of duplicated code and make things more consistent and manageable.</p>
+
+<p>One year later this abstraction layer, which was effectively a Lambda middleware framework for Node.js, was polished and published as an open source project and this is how Middy was born.</p>
+
+<p>The project got some good traction in the open source community and many developers started to contribute. Unfortunately, after a while, the original company from which Middy was born closed their doors and Luciano moved to other roles that did not involve so much serverless and Lambda. It was increasingly harder for him to keep up with the latest changes in the serverless ecosystem and keep developing the project. With some good amount of effort Luciano still managed to release v1.0.0 but then he started to explicitly <a href="https://loige.co/middy-1-is-here#looking-for-help">call for help in the community</a>.</p>
+
+<p>Thankfully, at this point Will Farrell, an early adopter and long time contributor, offered to take over the leadership of the project and since then has been leading the efforts on the project including supporting the community, delivering a much more polished V 2.0.0. He is already working towards an even more interesting V 3.0.0.</p>
+
+        <p><strong>How do you use Middy in production systems yourself?</strong></p>
+
+        <p><strong>Will:</strong> At DataStream, we started using Middy shortly after the v1-alpha was released about 3 years ago. We were migrating from using ElasticBeanstalk to be more serverless. Our API was the first piece to use Middy. Since then we’ve fully migrated to serverless completely  and every Lambda and Fargate container use Middy. Interestingly, even our Fargate containers use Middy to keep the code clean and organised. As Lambda gets better and covers more use cases, this approach allows us to switch from fargate to Lambda quickly to meet the needs of the system and lower costs. We use nearly every "official" middleware provided from Middy.</p>
+
+        <p><strong>Have you tried any of the other serverless platforms?</strong></p>
+
+        <p><strong>Will:</strong> I mostly stick to AWS, but I have been known to use Firebase for smaller one-off projects. Their Auth + function + DB integration is really powerful while being developer friendly. One platform I’d like to try for a project is Cloudflare Workers with KV Store, they’re doing some really cool stuff over there.</p>
+
+<p><strong>Luciano:</strong> I have been using mostly AWS as well even though I had the opportunity to also work with Azure functions for some professional projects. While I think Azure is doing a great job and improving every day, I have to admit that at the time (~2019) working with Azure functions was, in some aspects, harder than working with AWS Lambda. I found some inconsistencies in the way authentication is managed across services (e.g. storage vs other services) and there wasn't a one consistent SDK I could use to manage these services. Although AWS isn't the most user friendly experience either, I think, for that specific project, it did definitely beat Azure and I am glad that the whole project was eventually migrated to AWS.</p>
+
+        <p><strong>What use cases/situations do you think using Node, Middy and AWS Lambda is so ideal that you wouldn't consider doing them any other way anymore?</strong></p>
+
+        <p><strong>Will:</strong> Middy is essentially a middleware framework. it allows you to structure your code in "layers" where every layer is fulfilling a specific responsibility: serialization / deserialization, validation, authentication, etc. Middy allows you to focus on your business logic by moving all these concerns outside from your handler code. Your handler remains somewhat pure and decoupled from all these additional concerns and therefore results more readable and maintainable. You can then wrap your handler with Middy and attach one or more middleware that provide the additional functionality you need. Middleware are meant to be configurable so you can re-use them across different lambdas with minimal effort.</p>
+
+<p>API Gateway is the most popular use case because it can be the most complex and it will typically require the use of multiple middleware.</p>
+
+<p>There are quite a few alternatives that one could use and more of them are starting to emerge in the open source world.</p>
+
+<p>The main reason I first chose Middy over the others was because it’s code was simple in design, didn’t use dependencies excessively and was purpose built.</p>
+
+<p>Unlike others, Middy also focuses on use cases like triggering Lambda from other services such as SQS and S3 and making the developer experience in these less used cases easier.</p>
+
+        <p style="border-left: 4px solid #E2E8F0; padding-left: 20px; color: #666;"><em>The <a href="https://github.com/middyjs/middy">Middy repo can be found here</a>. You can also find both <a href="https://github.com/willfarrell">Will</a> and <a href="https://github.com/lmammino">Luciano</a> on GitHub too.</em>.</p>
+
+        <hr class="article_end">
+
+        <div class="author_meta">
+          <img src="https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg" alt="Peter Cooper" >
+          <div>
+          <h4>Written by</h4>
+          <h2>Peter Cooper <a href="https://twitter.com/peterc" title="Peter Cooper on Twitter"><svg class="twitter" viewBox="0 0 24 24">
+            <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+          </svg></a></h2>
+          <p>Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 500,000+ readers.</p>
+          </div>
+        </div><!-- End of Author Meta div -->
+
+      <hr class="promo_line">
+
+      <div class="promo"><!-- promo -->
+        <a href="https://nodeweekly.com" title="Node.js Newsletter"><img src="https://superhighway.dev/images/v1587565735/ifdurvyosa9jiyhuho0b.png"></a>
+        <div class="promo_copy">
+        <h2>Want more Node?</h2>
+        <p>Join over 50,000 others and sign up for Node Weekly. A free weekly newsletter round-up of Node news, tools and tutorials.<br><br>→ <a href="https://nodeweekly.com" title="Node Newsletter">nodeweekly.com</a></p>
+        </div>
+      </div><!-- End of Promo div -->
+
+      </div>
+
+    </article>
+
+    <div id="logo"><a href="#">&#9776;&nbsp;&nbsp;<img src="logo.png" height="21" alt="superhighway" /></a></div>
+
+</body>
+</html>
