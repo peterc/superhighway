@@ -63,13 +63,13 @@
 
         <p><strong>What use cases/situations do you think using Node, Middy and AWS Lambda is so ideal that you wouldn't consider doing them any other way anymore?</strong></p>
 
-        <p><strong>Will:</strong> Middy is essentially a middleware framework. it allows you to structure your code in "layers" where every layer is fulfilling a specific responsibility: serialization / deserialization, validation, authentication, etc. Middy allows you to focus on your business logic by moving all these concerns outside from your handler code. Your handler remains somewhat pure and decoupled from all these additional concerns and therefore results more readable and maintainable. You can then wrap your handler with Middy and attach one or more middleware that provide the additional functionality you need. Middleware are meant to be configurable so you can re-use them across different lambdas with minimal effort.</p>
+        <p><strong>Will:</strong> Middy is essentially a middleware framework. It allows you to structure your code in "layers" where every layer is fulfilling a specific responsibility: serialization / deserialization, validation, authentication, etc. Middy allows you to focus on your business logic by moving all these concerns outside from your handler code. Your handler remains somewhat pure and decoupled from all these additional concerns and therefore results more readable and maintainable. You can then wrap your handler with Middy and attach one or more middleware that provide the additional functionality you need. Middleware are meant to be configurable so you can re-use them across different lambdas with minimal effort.</p>
 
 <p>API Gateway is the most popular use case because it can be the most complex and it will typically require the use of multiple middleware.</p>
 
 <p>There are quite a few alternatives that one could use and more of them are starting to emerge in the open source world.</p>
 
-<p>The main reason I first chose Middy over the others was because it’s code was simple in design, didn’t use dependencies excessively and was purpose built.</p>
+<p>The main reason I first chose Middy over the others was because its code was simple in design, didn’t use dependencies excessively and was purpose built.</p>
 
 <p>Unlike others, Middy also focuses on use cases like triggering Lambda from other services such as SQS and S3 and making the developer experience in these less used cases easier.</p>
 
