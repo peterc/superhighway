@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="/1.css" />
   <link rel="icon" href="/favicon.ico" />
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}" />{{ end }}
 
   <title>{{ .Title }}</title>
   <meta name="description" content="{{ .Description }}" />

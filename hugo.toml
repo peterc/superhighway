@@ -8,6 +8,9 @@ uglyURLs = true
   tagline = "Developer stories from the fast lane"
   twitter = "@SUPERHlGHWAY"
 
+[outputs]
+  home = ["HTML", "RSS"]
+
 [taxonomies]
 
 [markup.goldmark.renderer]
