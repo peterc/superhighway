@@ -1,0 +1,10 @@
+{{ $newsletter := index site.Data.newsletters .Params.newsletter }}
+{{ with $newsletter }}
+<div class="promo">
+  <a href="{{ .url }}" title="{{ .name }}"><img src="{{ .image }}" alt=""></a>
+  <div class="promo_copy">
+  <h2>{{ .heading }}</h2>
+  <p>{{ .description }}<br><br>&rarr; <a href="{{ .url }}" title="{{ .name }}">{{ .url | replaceRE "^https?://" "" }}</a></p>
+  </div>
+</div>
+{{ end }}

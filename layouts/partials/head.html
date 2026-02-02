@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/1.css" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description }}" />
+  <meta property="og:description" content="{{ .Description }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:image" content="{{ with .Params.og_image }}{{ . }}{{ else }}https://superhighway.dev/favicon.png{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta name="twitter:site" content="{{ site.Params.twitter }}" />
+
+  <meta property="og:site_name" content="{{ site.Title }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  {{ if .Params.highlight }}
+  <link rel="stylesheet" href="/vs.min.css" />
+  <script src="/highlight.min.js"></script>
+  {{ end }}
+</head>

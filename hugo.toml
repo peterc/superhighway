@@ -1,0 +1,17 @@
+baseURL = "https://superhighway.dev/"
+languageCode = "en"
+title = "Superhighway"
+uglyURLs = true
+
+[params]
+  description = "The developer information superhighway"
+  tagline = "Developer stories from the fast lane"
+  twitter = "@SUPERHlGHWAY"
+
+[taxonomies]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  codeFences = false

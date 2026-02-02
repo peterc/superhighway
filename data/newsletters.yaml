@@ -1,0 +1,55 @@
+ruby:
+  name: "Ruby Weekly"
+  url: "https://rubyweekly.com"
+  image: "https://superhighway.dev/images/v1575476504/okyhcsniubt7qluqutbg.png"
+  heading: "Want more Ruby?"
+  description: "Join over 40,000 developers and sign up for Ruby Weekly. A free weekly newsletter about the Ruby programming language."
+
+javascript:
+  name: "JavaScript Weekly"
+  url: "https://javascriptweekly.com"
+  image: "https://superhighway.dev/images/v1606392685/wz087itazb0ja2xwv2po.png"
+  heading: "JavaScript developer?"
+  description: "Join over 170,000 developers and sign up for JavaScript Weekly. A free weekly newsletter about all things JavaScript."
+
+node:
+  name: "Node Weekly"
+  url: "https://nodeweekly.com"
+  image: "https://superhighway.dev/images/v1595927985/xc8u7xp6bd9x8b92pjln.png"
+  heading: "Want more Node?"
+  description: "Join over 50,000 others and sign up for Node Weekly. A free weekly newsletter round-up of Node news, tools and tutorials."
+
+golang:
+  name: "Golang Weekly"
+  url: "https://golangweekly.com"
+  image: "https://golangweekly.com/images/gopher-keith-57.png"
+  heading: "Want more Go?"
+  description: "Join over 25,000 developers and sign up for Golang Weekly. A free weekly newsletter about the Go programming language."
+
+postgres:
+  name: "Postgres Weekly"
+  url: "https://postgresweekly.com"
+  image: "https://postgresweekly.com/images/Postgres-Keith.png"
+  heading: "Want more Postgres?"
+  description: "Join over 15,000 developers and sign up for Postgres Weekly. A free weekly newsletter about the PostgreSQL relational database management system."
+
+frontend:
+  name: "Frontend Focus"
+  url: "https://frontendfoc.us"
+  image: "https://superhighway.dev/images/v1576513646/mfpklv8vxdri7oq7f1fb.png"
+  heading: "Looking to focus on Frontend?"
+  description: "Join nearly 90,000 developers and sign up for Frontend Focus. A free weekly newsletter about HTML, CSS, WebGL, browser tech, and more."
+
+react:
+  name: "React Status"
+  url: "https://react.statuscode.com"
+  image: "https://react.statuscode.com/images/reactkeith.png"
+  heading: "Want more React?"
+  description: "Join over 40,000 developers and sign up for React Status. A free weekly newsletter the latest React and React Native links and tutorials."
+
+serverless:
+  name: "Serverless Status"
+  url: "https://serverless.email"
+  image: "https://serverless.email/images/serverlesskeith.png"
+  heading: "All things Serverless"
+  description: "Join over 6,000 developers and sign up for Serverless Status. A free weekly newsletter covering serverless and function-as-a-service (FaaS) architectures and platforms including AWS Lambda and Azure Functions."

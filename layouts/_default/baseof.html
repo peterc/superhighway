@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body class="{{ .Params.body_class | default "article" }}" id="top">
+
+  {{ block "main" . }}{{ end }}
+
+  {{ partial "nav.html" . }}
+
+</body>
+</html>

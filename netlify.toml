@@ -1,3 +1,6 @@
 [build]
-  command = "ruby build.rb"
-  publish = "_site"
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.146.1"

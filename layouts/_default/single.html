@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+    <article>
+      {{ with .Params.banner_image }}
+      <div style="background: url({{ . }}), #369cee; height: 25vw; background-size: cover; background-position: center;"></div>
+      {{ end }}
+      {{ with .Params.header_image }}
+      <div style="background-color: #369cee; text-align: center">
+        <img src="{{ . }}" style="margin: 0 auto; max-width: 90vw" alt=""/>
+      </div>
+      {{ end }}
+      <header>
+        <div class="sub">{{ .Params.category }}</div>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}<h2>{{ . }}</h2>{{ end }}
+        <p class="byline">by {{ with .Params.author_link }}<a href="{{ . }}">{{ end }}{{ (index site.Data.authors $.Params.author).name }}{{ with .Params.author_link }}</a>{{ end }}{{ with .Params.byline_extra }} {{ . | safeHTML }}{{ end }}&nbsp;&nbsp;{{ with .Params.date_separator }}{{ . }}{{ else }}&middot;{{ end }}&nbsp;&nbsp;{{ .Date.Format "January 2, 2006" }}</p>
+      </header>
+
+      <div class="content">
+        {{ .Content }}
+
+        <hr class="article_end" aria-hidden="true">
+
+        {{ partial "author.html" . }}
+
+      <hr class="promo_line" aria-hidden="true">
+
+        {{ partial "promo.html" . }}
+
+      </div>
+
+    </article>
+
+{{ if .Params.highlight }}
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
+{{ end }}
