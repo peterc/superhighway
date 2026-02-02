@@ -5,7 +5,7 @@ uglyURLs = true
 
 [params]
   description = "The developer information superhighway"
-  tagline = "Developer stories from the fast lane"
+  tagline = "Developer stories that don't fit into weekly newsletters"
   twitter = "@SUPERHlGHWAY"
 
 [outputs]

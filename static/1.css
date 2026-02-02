@@ -113,6 +113,18 @@ p > mark {
   pointer-events: none;
 }
 
+.home header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(77,184,232,0.3), rgba(255,255,255,0.15));
+  clip-path: polygon(0 calc(100% - 2px), 100% 0, 100% 2px, 0 100%);
+  pointer-events: none;
+}
+
 .header-brand {
   margin: 0 auto;
   text-align: center;
@@ -158,6 +170,36 @@ p > mark {
   position: relative;
 }
 
+.header-from {
+  text-align: center;
+  margin: 0.75rem 0 0;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  position: relative;
+}
+
+.header-from a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s ease;
+}
+
+.header-from a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.header-from img {
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.header-from a:hover img {
+  opacity: 0.8;
+}
+
 /* Homepage list */
 
 .home main {
@@ -170,13 +212,24 @@ p > mark {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0 1.75rem;
   margin: 0;
+  position: relative;
 }
 
-.home article.listing:last-child {
-  border-bottom: none;
+.home article.listing::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--blue-400), transparent);
+  box-shadow: 0 0 6px rgba(33, 150, 212, 0.4), 0 0 14px rgba(33, 150, 212, 0.15);
+}
+
+.home article.listing:last-child::after {
+  display: none;
 }
 
 .home article.listing > a {
@@ -471,6 +524,57 @@ hr.promo_line {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 45%, var(--blue-500) 100%);
+  clip-path: polygon(0 2.5rem, 100% 0, 100% 100%, 0 100%);
+  padding: 5rem 0 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    115deg,
+    transparent,
+    transparent 60px,
+    rgba(255,255,255,0.03) 60px,
+    rgba(255,255,255,0.03) 62px
+  );
+  pointer-events: none;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  background: linear-gradient(to right, rgba(255,255,255,0.15), rgba(77,184,232,0.3), rgba(255,255,255,0.15));
+  clip-path: polygon(0 100%, 100% 0, 100% 2px, 0 calc(100% + 2px));
+  pointer-events: none;
+}
+
+footer a {
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+footer img {
+  display: block;
 }
 
 /* Floating nav */
