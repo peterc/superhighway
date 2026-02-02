@@ -1,5 +1,3 @@
-require 'erb'
-require 'nokogiri'
 require 'strscan'
 
 #CACHE_FOLDER = "/opt/build/cache"
@@ -45,5 +43,10 @@ Dir['site/*.page'].each do |f|
 
   File.open("_site/" + File.basename(f, '.page') + '.html', "w") { |f| f.puts out }
 end
+
+puts "Stamping build time"
+index = File.read("_site/index.html")
+index.gsub!("<!-- BUILT_AT -->", "Built at #{Time.now.utc.strftime('%Y-%m-%d %H:%M UTC')}")
+File.write("_site/index.html", index)
 
 puts "Done"

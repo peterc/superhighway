@@ -1,3 +1,3 @@
 [build]
-  command = "bundle exec ruby build.rb"
+  command = "ruby build.rb"
   publish = "_site"
