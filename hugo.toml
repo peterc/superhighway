@@ -11,8 +11,6 @@ uglyURLs = true
 [outputs]
   home = ["HTML", "RSS"]
 
-[taxonomies]
-
 [markup.goldmark.renderer]
   unsafe = true
 
