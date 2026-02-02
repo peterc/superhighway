@@ -6,8 +6,8 @@ category: "Year in Review"
 subtitle: "A look back at what proved popular within the Postgres community this year."
 author: "peter-cooper"
 newsletter: "postgres"
-og_image: "https://superhighway.dev/images/v1608292481/dl849dvgbrrewer8t5l7.jpg"
-banner_image: "https://superhighway.dev/images/v1608292481/dl849dvgbrrewer8t5l7.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dl849dvgbrrewer8t5l7.jpg"
+banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dl849dvgbrrewer8t5l7.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 

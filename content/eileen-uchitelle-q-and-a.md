@@ -6,11 +6,11 @@ category: "Ruby Q&A Series"
 subtitle: "Engineer at GitHub and Rails Core Team Member"
 author: "glenn-goodrich"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1575475686/add7rkqcd6gfa8glmzxz.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/add7rkqcd6gfa8glmzxz.jpg"
 author_link: "https://twitter.com/ruprict"
 ---
 
-<img src="https://superhighway.dev/images/v1572528078/lyubxfji50zmctmbtf82.jpg" alt="" style="float:right; height: 150px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/lyubxfji50zmctmbtf82.jpg" alt="" style="float:right; height: 150px; margin: 20px 0px 20px 40px; ">
 
 Eileen Uchitelle is a Staff Software Engineer on the Ruby Architecture Team at GitHub and a member of the Rails Core team. She's an avid contributor to open source focusing on Rails and its dependencies. Eileen is passionate about scalability, performance, and making open source communities more sustainable and welcoming.
 

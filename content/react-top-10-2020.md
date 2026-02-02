@@ -6,8 +6,8 @@ category: "Year in Review"
 subtitle: "Looking back at what proved popular in the React world this year."
 author: "peter-cooper"
 newsletter: "react"
-og_image: "https://superhighway.dev/images/v1608034473/sxktdtdzkdbyn5myqqol.png"
-banner_image: "https://superhighway.dev/images/v1608034473/sxktdtdzkdbyn5myqqol.png"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/sxktdtdzkdbyn5myqqol.png"
+banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/sxktdtdzkdbyn5myqqol.png"
 author_link: "https://twitter.com/peterc"
 ---
 

@@ -6,7 +6,7 @@ category: "🔥 Decent discounts"
 subtitle: "Offers on courses, books, tools and more."
 author: "chris-brandrick"
 newsletter: "javascript"
-og_image: "https://superhighway.dev/images/v1606400364/ls8wslapaknbphf0wyyl.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ls8wslapaknbphf0wyyl.jpg"
 author_link: "https://twitter.com/chrisbrandrick"
 date_separator: "|"
 byline_extra: "and <a href=\"https://twitter.com/peterc\">Peter Cooper</a>"
@@ -14,7 +14,7 @@ byline_extra: "and <a href=\"https://twitter.com/peterc\">Peter Cooper</a>"
 
 *Note: We do not receive any commission for these links. We've just collected deals together here because we didn't want to clutter up [JavaScript Weekly](https://javascriptweekly.com/) today! :-) We found these deals via [this open call](https://twitter.com/JavaScriptDaily/status/1331967953957494784) and by searching for ourselves.*
 
-<img src="https://superhighway.dev/images/v1606400364/ls8wslapaknbphf0wyyl.jpg" alt="" style="width:100%; margin: 20px 0px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ls8wslapaknbphf0wyyl.jpg" alt="" style="width:100%; margin: 20px 0px; ">
 
 The annual shopping bonanza that Black Friday has seemingly become isn't all just getting new socks or half price Amazon Echos --- we've found a variety of offers aimed at JavaScript developers too.
 
@@ -24,7 +24,7 @@ Please note that we're not responsible if someone changes their prices or pulls 
 
 ### **[Eloquent JavaScript](https://nostarch.com/ejs3) *(and others)* \[33.7% Off\]**
 
-<img src="https://superhighway.dev/images/v1606411279/j1est5kjbk421elzbtdt.png" alt="" style="float:right; height: 150px; margin: 0px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/j1est5kjbk421elzbtdt.png" alt="" style="float:right; height: 150px; margin: 0px 0px 20px 40px; ">
 
 'A Modern Introduction to Programming' by Marijn Haverbeke is just one of the excellent books available over at [No Starch Press](https://nostarch.com).
 
@@ -60,7 +60,7 @@ For Black Friday all his courses are half price, plus [purchasing power parity](
 
 ### **[Node CLI Automation Course](https://nodecli.com) \[\$99 - *was \$249*\]**
 
-<img src="https://superhighway.dev/images/v1606400455/o6jdedlrzlsctyghiwmy.png" alt="" style="width:100%; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/o6jdedlrzlsctyghiwmy.png" alt="" style="width:100%; ">
 
 This step-by-step course from Ahmad Awais covers how to build both Node.js and JavaScript based CLI apps, DevTools, and npm packages for automation purposes (saving you time). It features over 100 videos, 21 example projects, access to a private Discord, and you'll get lifetime updates to any future course changes.
 
@@ -68,7 +68,7 @@ This step-by-step course from Ahmad Awais covers how to build both Node.js and J
 
 ### **[Jamstack Handbook from Colby Fayock](https://jamstackhandbook.com) \[\$5 - *was \$10*\]**
 
-<img src="https://superhighway.dev/images/v1606401736/gkmywwk1ezxtgpo6qngr.png" alt="" style="float:right; height: 150px; margin: 0px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/gkmywwk1ezxtgpo6qngr.png" alt="" style="float:right; height: 150px; margin: 0px 0px 20px 40px; ">
 
 If you're even a tiny bit curious about Jamstack, then this ebook from Colby Fayock explains what the fuss is all about.
 
@@ -84,7 +84,7 @@ With 364 video lessons over 26 courses, you could watch a video almost every day
 
 ### **[Courses from Flavio Copes](https://flaviocopes.com/blackfriday/) \[\$49\]**
 
-<img src="https://superhighway.dev/images/v1606400840/xldjwgr3oc5ik3m6asko.png" alt="" style="width:100%; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/xldjwgr3oc5ik3m6asko.png" alt="" style="width:100%; ">
 
 All of Flavio's courses are on offer this week. The author/developer has courses on a variety of subjects, including React, Vue, Next.js, Svelte, and more. You can also grab all the courses in a bundle if you're feeling particularly scholarly.
 

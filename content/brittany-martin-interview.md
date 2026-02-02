@@ -6,11 +6,11 @@ category: "Ruby Interview Series"
 subtitle: "🎙 Host of the Ruby on Rails 5by5 Podcast"
 author: "glenn-goodrich"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1589294913/wqsbjcpdfygv3p3ypeek.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/wqsbjcpdfygv3p3ypeek.jpg"
 author_link: "https://twitter.com/ruprict"
 ---
 
-<img src="https://superhighway.dev/images/v1589287591/bmfouth7v61v3vxehee1.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/bmfouth7v61v3vxehee1.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Brittany is a developer, podcaster, and a fitness advocate with a passion for making our industry more diverse. Oh, and she plays roller derby, too.
 

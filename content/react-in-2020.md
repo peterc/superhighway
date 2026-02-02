@@ -6,8 +6,8 @@ category: "Year in Review"
 subtitle: "A month-by-month rundown of what happened in the world of React this year."
 author: "peter-cooper"
 newsletter: "react"
-og_image: "https://superhighway.dev/images/v1608208836/dwd0jhlb1p0bwoqasyv5.jpg"
-banner_image: "https://superhighway.dev/images/v1608208836/dwd0jhlb1p0bwoqasyv5.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dwd0jhlb1p0bwoqasyv5.jpg"
+banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dwd0jhlb1p0bwoqasyv5.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 

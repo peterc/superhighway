@@ -6,11 +6,11 @@ category: "PostgreSQL Interview Series"
 subtitle: "Postgres community organizer, author, adjunct professor, and open source advocate."
 author: "peter-cooper"
 newsletter: "postgres"
-og_image: "https://superhighway.dev/images/v1587565293/uwluwry4yqfhsgu6aodh.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/uwluwry4yqfhsgu6aodh.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1587564980/b5eadr6jayh1ucge9ao9.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/b5eadr6jayh1ucge9ao9.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 [Luca Ferrari](https://fluca1978.github.io) has had a huge impact on the Postgres community in Italy, having been president of the Italian PostgreSQL Users Group in the past and having helped to organize the popular [PGDay.it events](https://2020.pgday.it/it/). He also blogs frequently about Postgres and wrote [PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide) for Packt.
 

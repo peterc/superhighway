@@ -6,11 +6,11 @@ category: "Serverless Q&A"
 subtitle: "Serverless pundit and VP of Engineering at Theodo"
 author: "peter-cooper"
 newsletter: "serverless"
-og_image: "https://superhighway.dev/images/v1590400703/xeprnxzqttcirvirzuvp.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/xeprnxzqttcirvirzuvp.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1589839137/mx2gl8pjvven15tgzjrz.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/mx2gl8pjvven15tgzjrz.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Ben Ellerby is the VP of Engineering at [Theodo](https://www.theodo.co.uk) and an AWS Serverless Hero. He's the editor of the [Serverless Transformation blog](https://medium.com/serverless-transformation) and [podcast](https://anchor.fm/serverless-transformation) and works to help improve Serverless adoption in startups and large organisations. He's part of the team that developed [sls-dev-tools](https://medium.com/serverless-transformation/announcing-sls-dev-tools-v1-0-0-11e9ab01868e) which we've featured recently.
 

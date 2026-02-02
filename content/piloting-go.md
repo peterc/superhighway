@@ -6,7 +6,7 @@ category: "Let's Write Less Java, More Go"
 subtitle: "Three steps for approaching introducing Go at a company."
 author: "junaid-warwani"
 newsletter: "golang"
-og_image: "https://superhighway.dev/images/w_1280,e_sharpen:60/qvwrxnzsn4qrguebluix.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/qvwrxnzsn4qrguebluix.jpg"
 highlight: true
 author_link: "https://medium.com/@j.warwani"
 ---

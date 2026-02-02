@@ -6,11 +6,11 @@ category: "Ruby Interview Series"
 subtitle: "🔥 Creator of the Trailblazer framework"
 author: "glenn-goodrich"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1604315733/s7e1oqqmv3ankuyutcif.png"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/s7e1oqqmv3ankuyutcif.png"
 author_link: "https://twitter.com/ruprict"
 ---
 
-<img src="https://superhighway.dev/images/v1603196941/g11thhp5asztdl15kce1.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/g11thhp5asztdl15kce1.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Nick is a developer, presenter, and lover of pubs who has created numerous tools and frameworks to scratch his itches with Rails.
 

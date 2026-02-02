@@ -6,11 +6,11 @@ category: "Meet the Author"
 subtitle: "Author of Practical Object-Oriented Design in Ruby and 99 Bottles of OOP."
 author: "glenn-goodrich"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1598370597/bvnlfnfjd4ti7q2esw7y.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/bvnlfnfjd4ti7q2esw7y.jpg"
 author_link: "https://twitter.com/ruprict"
 ---
 
-<img src="https://superhighway.dev/images/v1598360595/vdg4snbfbus7nbnla2oo.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/vdg4snbfbus7nbnla2oo.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Sandi Metz is a prolific Rubyist and author that has penned two of the most well-received books on object-oriented programming in recent memory. She also speaks, consults, and teaches, giving us almost 99 ways to benefit from her wisdom.
 

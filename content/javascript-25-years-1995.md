@@ -6,12 +6,12 @@ category: "🗓 Turn back.getTime()"
 subtitle: "Quotes from 25 years ago."
 author: "chris-brandrick"
 newsletter: "javascript"
-og_image: "https://superhighway.dev/images/v1607014989/pu9d7e2oysgljrlmtwrh.png"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/pu9d7e2oysgljrlmtwrh.png"
 author_link: "https://twitter.com/chrisbrandrick"
 date_separator: "|"
 ---
 
-<img src="https://superhighway.dev/images/v1607013680/w3faz3fpcfaiej5mnun2.gif" alt="" style="float:right; height: 120px; margin: 20px 0px 20px 40px;">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/w3faz3fpcfaiej5mnun2.gif" alt="" style="float:right; height: 120px; margin: 20px 0px 20px 40px;">
 
 Time and time again JavaScript is crowned the **most popular programming language in the World**. Whether you agree with that or not, one thing's for sure: *It's come a long way since its [debut back in 1995](https://en.wikipedia.org/wiki/JavaScript#History)*.
 

@@ -6,11 +6,11 @@ category: "Ruby Interview Series"
 subtitle: "Creator of 'Ruby on Rails Tutorial', author of The Tau Manifesto, &amp; founder of Learn Enough."
 author: "peter-cooper"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1596705962/ccrzzfjavswcer4vdfng.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ccrzzfjavswcer4vdfng.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1596038819/wsrazwlj07enrvq4bnia.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/wsrazwlj07enrvq4bnia.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 His [Ruby on Rails tutorial](https://www.railstutorial.org) is a rite of passage for many budding Rubyists, including at least one of the curators of this newsletter. We're grateful that he's taken the time to answer a few questions today:
 

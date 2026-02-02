@@ -6,11 +6,11 @@ category: "Meet the Author"
 subtitle: "Author of JavaScript: The Definitive Guide"
 author: "peter-cooper"
 newsletter: "javascript"
-og_image: "https://superhighway.dev/images/v1591625630/i2bhkrxhvcepumchemxd.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/i2bhkrxhvcepumchemxd.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1590498112/k5gv10yvp5zgkc70uzcj.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/k5gv10yvp5zgkc70uzcj.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 David has been programming since 1981 and getting paid for it since 1985. In 2011, he started working at Mozilla. Since then he's worked as a full-stack engineer on [MDN](https://developer.mozilla.org/en-US/) and at Khan Academy. He currently works on cloud software at VMware and is in the process of releasing the seventh edition of [JavaScript: The Definitive Guide](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/), a hugely popular JavaScript book published by O'Reilly.
 

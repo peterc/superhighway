@@ -1,0 +1,129 @@
+#!/usr/bin/env ruby
+
+# Uploads an image to the superhighway R2 bucket and prints the public URL.
+#
+# Usage:
+#   bin/upload-image path/to/image.jpg
+#   bin/upload-image path/to/image.jpg custom/key/name.jpg
+#
+# Environment variables (set in your shell profile or .env):
+#   R2_ACCESS_KEY_ID     - Cloudflare R2 API token access key
+#   R2_SECRET_ACCESS_KEY - Cloudflare R2 API token secret key
+
+require "aws-sdk-s3"
+
+# Load .env from project root if present
+env_file = File.join(__dir__, "..", ".env")
+if File.exist?(env_file)
+  File.foreach(env_file) do |line|
+    line.strip!
+    next if line.empty? || line.start_with?("#")
+    key, value = line.split("=", 2)
+    ENV[key.strip] ||= value.strip.gsub(/\A["']|["']\z/, "") if key && value
+  end
+end
+
+ACCOUNT_ID = "afe19c9a83984392a8541eaff84123ad"
+BUCKET     = "superhighway-media"
+PUBLIC_URL = "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev"
+ENDPOINT   = "https://#{ACCOUNT_ID}.r2.cloudflarestorage.com"
+
+CONTENT_TYPES = {
+  ".jpg"  => "image/jpeg",
+  ".jpeg" => "image/jpeg",
+  ".png"  => "image/png",
+  ".gif"  => "image/gif",
+  ".webp" => "image/webp",
+  ".svg"  => "image/svg+xml",
+  ".avif" => "image/avif",
+}.freeze
+
+OPTIMIZABLE = %w[.jpg .jpeg .png .tiff .bmp .webp].freeze
+
+def die(msg)
+  $stderr.puts msg
+  exit 1
+end
+
+def magick_available?
+  system("magick", "--version", out: File::NULL, err: File::NULL)
+end
+
+def png?(path)
+  %w[.png].include?(File.extname(path).downcase)
+end
+
+def optimize(source_path)
+  require "tempfile"
+  keep_png = png?(source_path)
+  out_ext = keep_png ? ".png" : ".jpg"
+  tmp = Tempfile.new(["optimized", out_ext])
+  tmp.close
+
+  ok = system("magick", source_path, "-resize", "1200x>", "-strip", "-quality", "80", tmp.path)
+  if ok && File.size(tmp.path) > 0
+    $stderr.puts "Optimized: #{File.size(source_path)} → #{File.size(tmp.path)} bytes (#{keep_png ? "PNG" : "JPEG"})"
+    tmp
+  else
+    $stderr.puts "magick conversion failed, uploading original"
+    tmp.unlink
+    nil
+  end
+rescue => e
+  $stderr.puts "Optimization error: #{e.message}, uploading original"
+  tmp&.unlink
+  nil
+end
+
+access_key = ENV["R2_ACCESS_KEY_ID"]
+secret_key = ENV["R2_SECRET_ACCESS_KEY"]
+
+die "Missing R2_ACCESS_KEY_ID environment variable" unless access_key
+die "Missing R2_SECRET_ACCESS_KEY environment variable" unless secret_key
+
+file_path = ARGV[0]
+die "Usage: bin/upload-image <file> [key]" unless file_path
+die "File not found: #{file_path}" unless File.exist?(file_path)
+
+ext = File.extname(file_path).downcase
+upload_path = file_path
+optimized_tmp = nil
+
+if OPTIMIZABLE.include?(ext) && magick_available?
+  optimized_tmp = optimize(file_path)
+end
+
+if optimized_tmp
+  upload_path = optimized_tmp.path
+  upload_ext = png?(file_path) ? ".png" : ".jpg"
+  content_type = png?(file_path) ? "image/png" : "image/jpeg"
+else
+  upload_ext = ext
+  content_type = CONTENT_TYPES[ext] || "application/octet-stream"
+end
+
+key = ARGV[1] || File.basename(file_path, File.extname(file_path)) + upload_ext
+
+client = Aws::S3::Client.new(
+  region: "auto",
+  endpoint: ENDPOINT,
+  access_key_id: access_key,
+  secret_access_key: secret_key,
+  request_checksum_calculation: "when_required",
+  response_checksum_validation: "when_required",
+)
+
+$stderr.puts "Uploading #{file_path} → #{key}"
+
+client.put_object(
+  bucket: BUCKET,
+  key: key,
+  body: File.open(upload_path, "rb"),
+  content_type: content_type,
+)
+
+optimized_tmp&.unlink
+
+url = "#{PUBLIC_URL}/#{key}"
+puts url
+$stderr.puts "Done!"

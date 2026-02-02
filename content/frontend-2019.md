@@ -6,8 +6,8 @@ category: "Year in Review"
 subtitle: "A look back at what proved popular within the frontend community this year."
 author: "chris-brandrick"
 newsletter: "frontend"
-og_image: "https://superhighway.dev/images/v1576512163/urbpi3yj22xbq3prsqat.jpg"
-banner_image: "https://superhighway.dev/images/v1576512163/urbpi3yj22xbq3prsqat.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/urbpi3yj22xbq3prsqat.jpg"
+banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/urbpi3yj22xbq3prsqat.jpg"
 author_link: "https://twitter.com/chrisbrandrick"
 date_separator: "|"
 ---
@@ -18,7 +18,7 @@ Each year I bring together the highlights of the past twelve months in the front
 
 # The Frontend highlights of 2019:
 
-[<img src="https://superhighway.dev/images/v1576517417/rnh74nbqzxeuc9qilkgx.png" alt="Front-end Developer Handbook" style="width: 100%; height: auto;">](https://frontendmasters.com/books/front-end-handbook/2019/ "Front-end Developer Handbook 2019")
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/rnh74nbqzxeuc9qilkgx.png" alt="Front-end Developer Handbook" style="width: 100%; height: auto;">](https://frontendmasters.com/books/front-end-handbook/2019/ "Front-end Developer Handbook 2019")
 
 **[Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/ "Front-end Developer Handbook 2019")**
 
@@ -26,7 +26,7 @@ This detailed guide from Cody Lindley always proves popular, and this year is se
 
 ------------------------------------------------------------------------
 
-[<img src="https://superhighway.dev/images/v1576578242/nbops8mj4lcjwzrkf1jt.png" alt="The State of CSS 2019" style="width: 100%; height: auto;">](https://2019.stateofcss.com)
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/nbops8mj4lcjwzrkf1jt.png" alt="The State of CSS 2019" style="width: 100%; height: auto;">](https://2019.stateofcss.com)
 
 **[The State of CSS 2019](https://2019.stateofcss.com)**
 
@@ -34,7 +34,7 @@ The results from the first ever 'State of CSS' survey dropped in June. It asked 
 
 ------------------------------------------------------------------------
 
-[<img src="https://superhighway.dev/images/v1576579095/ie6f35rivhjvrvwpwzfz.jpg" alt="Microsoft Edge browser" style="width: 100%; height: auto;">](https://www.theverge.com/2019/5/6/18527550/microsoft-chromium-edge-google-history-collaboration)
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ie6f35rivhjvrvwpwzfz.jpg" alt="Microsoft Edge browser" style="width: 100%; height: auto;">](https://www.theverge.com/2019/5/6/18527550/microsoft-chromium-edge-google-history-collaboration)
 
 **[Inside Microsoft's surprise decision to work with Google on its Edge browser](https://www.theverge.com/2019/5/6/18527550/microsoft-chromium-edge-google-history-collaboration)**
 
@@ -42,7 +42,7 @@ One of the biggest surprises in the browser landscape this year was Microsoft's 
 
 ------------------------------------------------------------------------
 
-[<img src="https://superhighway.dev/images/v1576581225/kynxmffwgrmquxdyveso.png" alt="Password field" style="width: 100%; height: auto;">](https://venturebeat.com/2019/03/04/w3c-approves-webauthn-as-the-web-standard-for-password-free-logins/)
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/kynxmffwgrmquxdyveso.png" alt="Password field" style="width: 100%; height: auto;">](https://venturebeat.com/2019/03/04/w3c-approves-webauthn-as-the-web-standard-for-password-free-logins/)
 
 **[W3C approved WebAuthn as the web standard for password-free logins](https://venturebeat.com/2019/03/04/w3c-approves-webauthn-as-the-web-standard-for-password-free-logins/)**
 
@@ -50,7 +50,7 @@ Back in March the W3C shared news that the Web Authentication API (WebAuthn) had
 
 ------------------------------------------------------------------------
 
-[<img src="https://superhighway.dev/images/v1576517964/mpilsp0yrhf6xqfzzjcn.jpg" alt="Laptop screen with code" style="width: 100%; height: auto;">](https://dev.to/emmawedekind/10-html-element-you-didnt-know-you-needed-3jo4)
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/mpilsp0yrhf6xqfzzjcn.jpg" alt="Laptop screen with code" style="width: 100%; height: auto;">](https://dev.to/emmawedekind/10-html-element-you-didnt-know-you-needed-3jo4)
 
 **[10 HTML Elements You Didn't Know You Needed](https://dev.to/emmawedekind/10-html-element-you-didnt-know-you-needed-3jo4)**
 

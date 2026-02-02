@@ -49,3 +49,23 @@ og_image: "https://superhighway.dev/images/..."
 ```
 
 The `author` and `newsletter` keys must match entries in `data/authors.yaml` and `data/newsletters.yaml` respectively.
+
+## Images
+
+Images are hosted on Cloudflare R2, not in the repo. To upload an image, use the helper script:
+
+```
+bin/upload-image path/to/photo.jpg
+```
+
+This will optimize the image (resize to max 1200px wide, convert to JPEG, strip metadata) and upload it to R2, printing the public URL. Paste that URL into your article's markdown or front matter.
+
+You can also specify a custom key/path in the bucket:
+
+```
+bin/upload-image photo.jpg posts/my-article/hero.jpg
+```
+
+**Prerequisites:** The `aws-sdk-s3` gem must be installed (`gem install aws-sdk-s3`). If [ImageMagick](https://imagemagick.org/) is available, images are automatically optimized before upload. If it isn't, the original file is uploaded as-is.
+
+**Credentials:** You need R2 API keys. Either export `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` in your shell, or add them to a `.env` file in the project root (this file is gitignored). Ask Peter for a token.

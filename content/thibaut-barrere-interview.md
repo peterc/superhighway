@@ -6,11 +6,11 @@ category: "Ruby Interview Series"
 subtitle: "Long time Rubyist and Kiba maintainer"
 author: "glenn-goodrich"
 newsletter: "ruby"
-og_image: "https://superhighway.dev/images/v1588683602/dtpxk9gioqocrrf3exxd.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dtpxk9gioqocrrf3exxd.jpg"
 author_link: "https://twitter.com/ruprict"
 ---
 
-<img src="https://superhighway.dev/images/v1588067181/bcabcrhh9w4o34ao1dso.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/bcabcrhh9w4o34ao1dso.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Thibaut Barrère is a long-time Rubyist and data engineer who built and maintains the popular Extract, Transform, and Load (ETL) framework [Kiba](https://github.com/thbar/kiba).
 

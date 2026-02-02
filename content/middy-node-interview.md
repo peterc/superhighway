@@ -6,11 +6,11 @@ category: "Node Interview Series"
 subtitle: "🛵 The Node.js middleware engine for AWS Lambda"
 author: "peter-cooper"
 newsletter: "node"
-og_image: "https://superhighway.dev/images/v1618329519/smgmoamnqkkha70kkwa2.png"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/smgmoamnqkkha70kkwa2.png"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1618323580/pickty7b8kqc4ddoxw3o.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/pickty7b8kqc4ddoxw3o.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 [Middy](https://middy.js.org) is a simple middleware engine that allows you to simplify your AWS Lambda code when using Node.js.
 

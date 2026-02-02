@@ -6,8 +6,8 @@ category: "Bug catching in Go"
 subtitle: "An introduction to the static analysis tool Staticcheck"
 author: "shawn-smith"
 newsletter: "golang"
-og_image: "https://superhighway.dev/images/w_1280,e_sharpen:60/odl8suayxjlxh8xngmc3.jpg"
-header_image: "https://superhighway.dev/images/v1573149260/jp8dhz1reltoaupuzpjb.png"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/odl8suayxjlxh8xngmc3.jpg"
+header_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/jp8dhz1reltoaupuzpjb.png"
 highlight: true
 author_link: "https://github.com/shawnps"
 ---

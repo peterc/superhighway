@@ -6,11 +6,11 @@ category: "Meet the Author"
 subtitle: "JavaScript book author and trainer"
 author: "peter-cooper"
 newsletter: "node"
-og_image: "https://superhighway.dev/images/v1595928551/uoiz45gdcxryg5luleej.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/uoiz45gdcxryg5luleej.jpg"
 author_link: "https://twitter.com/peterc"
 ---
 
-<img src="https://superhighway.dev/images/v1542838790/cz0u3krahfubcselwlkc.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
+<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/cz0u3krahfubcselwlkc.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
 
 Valeri, also known as [The Code Barbarian](http://thecodebarbarian.com/), is a prolific author of JavaScript tutorials and books and was also the person to coin the term MEAN (as in the MongoDB, Express.js, Angular and Node.js stack).
 
@@ -36,7 +36,7 @@ However, plenty of developers use these patterns and the online docs should help
 
 **What's the hardest part of self publishing your own technical books?**
 
-[<img src="https://superhighway.dev/images/v1595928264/zd0sugn0wfwsiiljpbn1.jpg" alt="Mastering Mongoose: The Official Mongoose eBook" style="float:right; height: 300px; margin: 0px 0px 20px 40px; ">](https://masteringjs.io/ebooks/mastering-mongoose-node-weekly)
+[<img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/zd0sugn0wfwsiiljpbn1.jpg" alt="Mastering Mongoose: The Official Mongoose eBook" style="float:right; height: 300px; margin: 0px 0px 20px 40px; ">](https://masteringjs.io/ebooks/mastering-mongoose-node-weekly)
 
 The hardest part of writing is coming up with code samples. A great code sample is short, clean, and provides more insight than hundreds of words of prose explanation. Just copy/pasting code from an app typically leads to a bad example: there's often too many implementation-specific details in a real app to make the example sufficiently isolated.
 
