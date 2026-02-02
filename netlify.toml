@@ -4,3 +4,4 @@
 
 [build.environment]
   HUGO_VERSION = "0.146.1"
+  MISE_GLOBAL_CONFIG_FILE = "/dev/null"
