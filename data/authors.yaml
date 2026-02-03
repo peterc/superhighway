@@ -1,33 +1,33 @@
 peter-cooper:
   name: "Peter Cooper"
-  image: "https://superhighway.dev/images/v1587565623/w3trbuxgn6gdjr3gmawm.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/w3trbuxgn6gdjr3gmawm.jpg"
   twitter: "peterc"
   bio: "Publisher, editor, programmer. Edits email newsletters such as JavaScript Weekly, Ruby Weekly and Postgres Weekly for 450,000+ readers."
 
 glenn-goodrich:
   name: "Glenn Goodrich"
-  image: "https://superhighway.dev/images/v1575476433/pefiruwmpukhqeamerd2.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/pefiruwmpukhqeamerd2.jpg"
   twitter: "ruprict"
   bio: "A long time software engineer, architect, and nerd. Glenn is a published author that loves things like Ruby, Go, comics, and learning."
 
 chris-brandrick:
   name: "Chris Brandrick"
-  image: "https://superhighway.dev/images/v1576590879/lpr7nxa605wcequeu5mb.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/lpr7nxa605wcequeu5mb.jpg"
   twitter: "chrisbrandrick"
   bio: "Editorial Director at software development/programming email publisher Cooperpress."
 
 zae-johnson:
   name: "Za'e Johnson"
-  image: "https://superhighway.dev/images/v1576679286/oobnfkrja4zimbfo0aow.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/oobnfkrja4zimbfo0aow.jpg"
   bio: "Editorial Coordinator at Cooperpress."
 
 shawn-smith:
   name: "Shawn Smith"
-  image: "https://superhighway.dev/images/v1572367900/rmvvuctrxmm6yab7txxu.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/rmvvuctrxmm6yab7txxu.jpg"
   twitter: "shawnps"
   bio: "A software engineer and Go enthusiast. He is co-founder of <a href=\"https://goreportcard.com\" title=\"Go Report Card\">Go Report Card</a> and co-author of <a href=\"https://leanpub.com/productiongo/\" title=\"Production Go\">Production Go</a>."
 
 junaid-warwani:
   name: "Junaid Warwani"
-  image: "https://res.cloudinary.com/cpress/image/upload/v1573055930/ym9hlyxgfpne06a1uoqr.jpg"
+  image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ym9hlyxgfpne06a1uoqr.jpg"
   bio: "Fascinated by how startups grow from ideas into mature, sustainable companies, Junaid has worked at companies of all sizes, from six-person startups to tech giants, helping them build software systems and technology teams. He is currently an Engineering Manager at CommonBond."

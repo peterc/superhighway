@@ -8,7 +8,7 @@ author: "peter-cooper"
 newsletter: "react"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/sxktdtdzkdbyn5myqqol.png"
 banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/sxktdtdzkdbyn5myqqol.png"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 As one of the curators on [React Status](https://react.statuscode.com) (*a weekly email rounding up the latest React news, tutorials, and tools*), at the end of each year I like to reflect back on the most popular links from the past twelve months.

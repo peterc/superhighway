@@ -7,7 +7,7 @@ subtitle: "Creator of 'Ruby on Rails Tutorial', author of The Tau Manifesto, &am
 author: "peter-cooper"
 newsletter: "ruby"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ccrzzfjavswcer4vdfng.jpg"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 <img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/wsrazwlj07enrvq4bnia.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">

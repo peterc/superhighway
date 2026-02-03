@@ -9,7 +9,7 @@ newsletter: "javascript"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/ls8wslapaknbphf0wyyl.jpg"
 author_link: "https://twitter.com/chrisbrandrick"
 date_separator: "|"
-byline_extra: "and <a href=\"https://twitter.com/peterc\">Peter Cooper</a>"
+byline_extra: "and <a href=\"https://twitter.com/cooperx86\">Peter Cooper</a>"
 ---
 
 *Note: We do not receive any commission for these links. We've just collected deals together here because we didn't want to clutter up [JavaScript Weekly](https://javascriptweekly.com/) today! :-) We found these deals via [this open call](https://twitter.com/JavaScriptDaily/status/1331967953957494784) and by searching for ourselves.*

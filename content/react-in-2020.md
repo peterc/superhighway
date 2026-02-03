@@ -8,7 +8,7 @@ author: "peter-cooper"
 newsletter: "react"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dwd0jhlb1p0bwoqasyv5.jpg"
 banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dwd0jhlb1p0bwoqasyv5.jpg"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 As 2020 draws to a close, I wanted to look back over the past 12 months and highlight what happened in the React ecosystem this year. As such, here's a brief month-by-month breakdown of the year that was.

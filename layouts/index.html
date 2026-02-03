@@ -18,7 +18,13 @@
   {{ range $sorted }}
     {{ $author := index site.Data.authors .Params.author }}
     <article class="listing">
-      <a href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1"><img src="{{ .Params.og_image }}" alt="{{ .Title }}"></a>
+      <a href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+        {{- with .Params.og_image -}}
+          <img src="{{ . }}" alt="{{ $.Title }}">
+        {{- else -}}
+          <span class="listing-placeholder"></span>
+        {{- end -}}
+      </a>
       <div>
         <p class="sub">{{ .Params.category }}</p>
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>

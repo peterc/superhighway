@@ -7,7 +7,7 @@ subtitle: "Postgres community organizer, author, adjunct professor, and open sou
 author: "peter-cooper"
 newsletter: "postgres"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/uwluwry4yqfhsgu6aodh.jpg"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 <img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/b5eadr6jayh1ucge9ao9.jpg" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">

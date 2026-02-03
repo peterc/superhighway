@@ -7,7 +7,7 @@ subtitle: "🛵 The Node.js middleware engine for AWS Lambda"
 author: "peter-cooper"
 newsletter: "node"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/smgmoamnqkkha70kkwa2.png"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 <img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/pickty7b8kqc4ddoxw3o.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">

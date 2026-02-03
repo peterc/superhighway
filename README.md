@@ -33,22 +33,24 @@ Handled by Netlify. Pushing to the master branch triggers a build automatically 
 
 ## Adding an article
 
-Create a new `.md` file in `content/` with front matter like:
+Run:
 
-```yaml
----
-title: "Article Title"
-description: "Short description for meta tags."
-date: 2024-01-15
-category: "Series Name"
-subtitle: "Subtitle shown below the title"
-author: "peter-cooper"
-newsletter: "ruby"
-og_image: "https://superhighway.dev/images/..."
----
+```
+hugo new my-article-slug.md
 ```
 
-The `author` and `newsletter` keys must match entries in `data/authors.yaml` and `data/newsletters.yaml` respectively.
+This creates `content/my-article-slug.md` with the front matter fields pre-filled. Open it up and fill in the blanks:
+
+| Field         | What to put                                                  |
+|---------------|--------------------------------------------------------------|
+| `title`       | Auto-generated from the filename — tweak as needed           |
+| `description` | Short summary for meta tags / social cards                   |
+| `date`        | Auto-set to today — change if publishing later               |
+| `category`    | Series name, e.g. "Serverless Q&A", "Year in Review"        |
+| `subtitle`    | Shown below the title on the article page                    |
+| `author`      | Must match a key in `data/authors.yaml`                      |
+| `newsletter`  | Must match a key in `data/newsletters.yaml`                  |
+| `og_image`    | Public URL for the social/OpenGraph image (see Images below) |
 
 ## Images
 

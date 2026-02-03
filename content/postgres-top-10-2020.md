@@ -8,7 +8,7 @@ author: "peter-cooper"
 newsletter: "postgres"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dl849dvgbrrewer8t5l7.jpg"
 banner_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/dl849dvgbrrewer8t5l7.jpg"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 As 2020 *finally* draws to a close, I thought it would be interesting to take a quick look and highlight some of the most popular PostgreSQL links of 2020.

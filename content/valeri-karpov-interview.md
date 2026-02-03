@@ -7,7 +7,7 @@ subtitle: "JavaScript book author and trainer"
 author: "peter-cooper"
 newsletter: "node"
 og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/uoiz45gdcxryg5luleej.jpg"
-author_link: "https://twitter.com/peterc"
+author_link: "https://twitter.com/cooperx86"
 ---
 
 <img src="https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/cz0u3krahfubcselwlkc.png" alt="" style="float:right; height: 180px; margin: 20px 0px 20px 40px; ">
