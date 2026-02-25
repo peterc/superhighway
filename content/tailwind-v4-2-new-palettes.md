@@ -1,5 +1,5 @@
 ---
-title: "Here's the Four New Color Palettes added to Tailwind CSS v4.2"
+title: "The Four New Color Palettes added to Tailwind CSS v4.2"
 description: "Mauve, olive, mist, and taupe join the default palette — all offer a swatch of tinted neutrals."
 date: 2026-02-24
 category: "Tailwind CSS"
