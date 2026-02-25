@@ -46,7 +46,7 @@ I guess in practice, these new palettes go alongside the likes of `slate` or `zi
 
 ## Why oklch?
 
-As with all of the Tailwind CSS palettes, these four new options are defined in the uniform color space [oklch](https://www.w3.org/TR/css-color-4/#the-oklch-notation). Each value has three components: *lightness* (0–100%), *chroma* (roughly 0–0.4), and *hue angle* (0–360°). [Evil Martians published an excellent post](https://evilmartians.com/chronicles/exploring-the-oklch-ecosystem-and-its-tools) that explains the benefit of using OKLCH, noting that it makes "*color feel predicatable, expressive, and safe to use*".
+As with all of the Tailwind CSS palettes, these four new options are defined in the uniform color space [oklch](https://www.w3.org/TR/css-color-4/#the-oklch-notation). Each value has three components: *lightness* (0–100%), *chroma* (roughly 0–0.4), and *hue angle* (0–360°). [Evil Martians published an excellent post](https://evilmartians.com/chronicles/exploring-the-oklch-ecosystem-and-its-tools) that explains the benefit of using OKLCH, noting that it makes "*color feel predictable, expressive, and safe to use*".
 
 The key advantage of oklch? The lightness steps up from one shade to another feel *visually* even. Chroma across all four palettes peaks around 0.031–0.034 — barely above zero — which is what keeps them firmly in neutral territory despite having a distinct hue. Will you be using them?
 
