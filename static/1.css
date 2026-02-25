@@ -482,6 +482,19 @@ blockquote {
 }
 .twitter:hover > path { fill: var(--blue-400); }
 
+  .bluesky {                                                                            
+    width: 22px;                                                                        
+    height: 22px;                                                                       
+    vertical-align: -3px;
+    margin-left: 4px;
+  }
+
+  .bluesky > path {
+    fill: var(--text-muted);
+    transition: fill 0.15s ease;
+  }
+  .bluesky:hover > path { fill: #0085ff; }
+
 hr {
   border: none;
   height: 1px;
