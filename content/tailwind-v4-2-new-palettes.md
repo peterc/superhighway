@@ -156,126 +156,261 @@ The key advantage of oklch? Many feel that lightness steps from one shade to ano
 ## In use
 
 Finally, here's an example look at how all four palettes look side by side — including the full ramp from 50 to 950, so you can compare the hue character of each. 
+<div style="display:flex; flex-direction:column; gap:12px; margin:24px 0;">
 
-<div style="margin:24px 0; display:flex; flex-direction:column; gap:16px;">
-
-  <div>
-    <p style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.06em; margin:0 0 6px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#79697b;"></span> mauve</p>
-    <div style="display:flex; border-radius:8px; overflow:hidden; height:48px;">
-      <div style="flex:1; background:#fafafa;" title="50"></div>
-      <div style="flex:1; background:#f3f1f3;" title="100"></div>
-      <div style="flex:1; background:#e7e4e7;" title="200"></div>
-      <div style="flex:1; background:#d7d0d7;" title="300"></div>
-      <div style="flex:1; background:#a89ea9;" title="400"></div>
-      <div style="flex:1; background:#79697b;" title="500"></div>
-      <div style="flex:1; background:#594c5b;" title="600"></div>
-      <div style="flex:1; background:#463947;" title="700"></div>
-      <div style="flex:1; background:#2a212c;" title="800"></div>
-      <div style="flex:1; background:#1d161e;" title="900"></div>
-      <div style="flex:1; background:#0c090c;" title="950"></div>
+  <!-- ── MAUVE ───────────────────────────────────────────── -->
+  <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e7eb; box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+    <div style="display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #f3f4f6;">
+      <span style="width:12px; height:12px; border-radius:50%; background:#79697b; display:inline-block; flex-shrink:0;"></span>
+      <span style="font-size:14px; font-weight:600; color:#111827;">mauve</span>
+      <span style="font-size:12px; color:#9ca3af;">— muted violet-gray · warm</span>
     </div>
-    <div style="display:flex; margin-top:3px;">
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">50</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">100</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">200</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">300</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">400</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">500</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">600</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">700</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">800</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">900</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">950</div>
+    <div style="display:flex; border-bottom:1px solid #f3f4f6;">
+      <div style="flex:1;"><div style="height:52px; background:#fafafa;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">50</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#f3f1f3;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">100</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#e7e4e7;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">200</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#d7d0d7;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">300</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#a89ea9;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">400</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#79697b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">500</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#594c5b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">600</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#463947;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">700</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#2a212c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">800</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#1d161e;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">900</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#0c090c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">950</div></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #f9fafb;">
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Card</p>
+        <div style="background:#fafafa; border:1px solid #e7e4e7; border-radius:10px; padding:14px;">
+          <div style="width:26px; height:26px; border-radius:6px; background:#79697b; margin-bottom:9px;"></div>
+          <div style="font-size:12px; font-weight:600; color:#1d161e; margin-bottom:3px;">Card heading</div>
+          <div style="font-size:11px; color:#594c5b; line-height:1.5; margin-bottom:10px;">Description text using this palette.</div>
+          <div style="display:flex; gap:6px;">
+            <span style="padding:3px 9px; border-radius:5px; background:#594c5b; color:#fff; font-size:11px; font-weight:600;">Action</span>
+            <span style="padding:3px 9px; border-radius:5px; background:#f3f1f3; color:#463947; font-size:11px; border:1px solid #e7e4e7;">Cancel</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Badges</p>
+        <div style="display:flex; flex-direction:column; gap:7px; align-items:flex-start;">
+          <span style="padding:2px 9px; border-radius:999px; background:#f3f1f3; color:#463947; font-size:11px;">Default</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#79697b; color:#fff; font-size:11px;">Active</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#1d161e; color:#e7e4e7; font-size:11px;">Dark</span>
+          <span style="padding:2px 9px; border-radius:999px; border:1px solid #d7d0d7; color:#594c5b; font-size:11px;">Outline</span>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Buttons</p>
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#594c5b; color:#fff; font-size:11px; font-weight:600;">Primary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#f3f1f3; color:#2a212c; font-size:11px; border:1px solid #e7e4e7;">Secondary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; border:1px solid #d7d0d7; color:#594c5b; font-size:11px;">Ghost</span>
+        </div>
+      </div>
+      <div style="padding:16px;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Typography</p>
+        <div style="display:flex; flex-direction:column; gap:3px; margin-bottom:10px;">
+          <span style="font-size:14px; font-weight:700; color:#0c090c;">Heading</span>
+          <span style="font-size:12px; color:#2a212c;">Body copy</span>
+          <span style="font-size:12px; color:#594c5b;">Secondary</span>
+          <span style="font-size:12px; color:#a89ea9;">Muted</span>
+        </div>
+        <div style="height:5px; border-radius:999px; background:#f3f1f3;"><div style="width:60%; height:100%; border-radius:999px; background:#79697b;"></div></div>
+        <span style="font-size:9px; color:#9ca3af; font-family:monospace;">Progress · 60%</span>
+      </div>
     </div>
   </div>
 
-  <div>
-    <p style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.06em; margin:0 0 6px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#7c7c67;"></span> olive</p>
-    <div style="display:flex; border-radius:8px; overflow:hidden; height:48px;">
-      <div style="flex:1; background:#fbfbf9;" title="50"></div>
-      <div style="flex:1; background:#f4f4f0;" title="100"></div>
-      <div style="flex:1; background:#e8e8e3;" title="200"></div>
-      <div style="flex:1; background:#d8d8d0;" title="300"></div>
-      <div style="flex:1; background:#abab9c;" title="400"></div>
-      <div style="flex:1; background:#7c7c67;" title="500"></div>
-      <div style="flex:1; background:#5b5b4b;" title="600"></div>
-      <div style="flex:1; background:#474739;" title="700"></div>
-      <div style="flex:1; background:#2b2b22;" title="800"></div>
-      <div style="flex:1; background:#1d1d16;" title="900"></div>
-      <div style="flex:1; background:#0c0c09;" title="950"></div>
+  <!-- ── OLIVE ───────────────────────────────────────────── -->
+  <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e7eb; box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+    <div style="display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #f3f4f6;">
+      <span style="width:12px; height:12px; border-radius:50%; background:#7c7c67; display:inline-block; flex-shrink:0;"></span>
+      <span style="font-size:14px; font-weight:600; color:#111827;">olive</span>
+      <span style="font-size:12px; color:#9ca3af;">— muted yellow-green · earthy</span>
     </div>
-    <div style="display:flex; margin-top:3px;">
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">50</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">100</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">200</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">300</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">400</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">500</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">600</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">700</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">800</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">900</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">950</div>
+    <div style="display:flex; border-bottom:1px solid #f3f4f6;">
+      <div style="flex:1;"><div style="height:52px; background:#fbfbf9;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">50</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#f4f4f0;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">100</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#e8e8e3;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">200</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#d8d8d0;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">300</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#abab9c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">400</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#7c7c67;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">500</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#5b5b4b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">600</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#474739;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">700</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#2b2b22;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">800</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#1d1d16;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">900</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#0c0c09;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">950</div></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #f9fafb;">
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Card</p>
+        <div style="background:#fbfbf9; border:1px solid #e8e8e3; border-radius:10px; padding:14px;">
+          <div style="width:26px; height:26px; border-radius:6px; background:#7c7c67; margin-bottom:9px;"></div>
+          <div style="font-size:12px; font-weight:600; color:#1d1d16; margin-bottom:3px;">Card heading</div>
+          <div style="font-size:11px; color:#5b5b4b; line-height:1.5; margin-bottom:10px;">Description text using this palette.</div>
+          <div style="display:flex; gap:6px;">
+            <span style="padding:3px 9px; border-radius:5px; background:#5b5b4b; color:#fff; font-size:11px; font-weight:600;">Action</span>
+            <span style="padding:3px 9px; border-radius:5px; background:#f4f4f0; color:#474739; font-size:11px; border:1px solid #e8e8e3;">Cancel</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Badges</p>
+        <div style="display:flex; flex-direction:column; gap:7px; align-items:flex-start;">
+          <span style="padding:2px 9px; border-radius:999px; background:#f4f4f0; color:#474739; font-size:11px;">Default</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#7c7c67; color:#fff; font-size:11px;">Active</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#1d1d16; color:#e8e8e3; font-size:11px;">Dark</span>
+          <span style="padding:2px 9px; border-radius:999px; border:1px solid #d8d8d0; color:#5b5b4b; font-size:11px;">Outline</span>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Buttons</p>
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#5b5b4b; color:#fff; font-size:11px; font-weight:600;">Primary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#f4f4f0; color:#2b2b22; font-size:11px; border:1px solid #e8e8e3;">Secondary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; border:1px solid #d8d8d0; color:#5b5b4b; font-size:11px;">Ghost</span>
+        </div>
+      </div>
+      <div style="padding:16px;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Typography</p>
+        <div style="display:flex; flex-direction:column; gap:3px; margin-bottom:10px;">
+          <span style="font-size:14px; font-weight:700; color:#0c0c09;">Heading</span>
+          <span style="font-size:12px; color:#2b2b22;">Body copy</span>
+          <span style="font-size:12px; color:#5b5b4b;">Secondary</span>
+          <span style="font-size:12px; color:#abab9c;">Muted</span>
+        </div>
+        <div style="height:5px; border-radius:999px; background:#f4f4f0;"><div style="width:60%; height:100%; border-radius:999px; background:#7c7c67;"></div></div>
+        <span style="font-size:9px; color:#9ca3af; font-family:monospace;">Progress · 60%</span>
+      </div>
     </div>
   </div>
 
-  <div>
-    <p style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.06em; margin:0 0 6px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#67787c;"></span> mist</p>
-    <div style="display:flex; border-radius:8px; overflow:hidden; height:48px;">
-      <div style="flex:1; background:#f9fbfb;" title="50"></div>
-      <div style="flex:1; background:#f1f3f3;" title="100"></div>
-      <div style="flex:1; background:#e3e7e8;" title="200"></div>
-      <div style="flex:1; background:#d0d6d8;" title="300"></div>
-      <div style="flex:1; background:#9ca8ab;" title="400"></div>
-      <div style="flex:1; background:#67787c;" title="500"></div>
-      <div style="flex:1; background:#4b585b;" title="600"></div>
-      <div style="flex:1; background:#394447;" title="700"></div>
-      <div style="flex:1; background:#22292b;" title="800"></div>
-      <div style="flex:1; background:#161b1d;" title="900"></div>
-      <div style="flex:1; background:#090b0c;" title="950"></div>
+  <!-- ── MIST ────────────────────────────────────────────── -->
+  <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e7eb; box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+    <div style="display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #f3f4f6;">
+      <span style="width:12px; height:12px; border-radius:50%; background:#67787c; display:inline-block; flex-shrink:0;"></span>
+      <span style="font-size:14px; font-weight:600; color:#111827;">mist</span>
+      <span style="font-size:12px; color:#9ca3af;">— cool blue-gray · coastal</span>
     </div>
-    <div style="display:flex; margin-top:3px;">
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">50</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">100</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">200</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">300</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">400</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">500</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">600</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">700</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">800</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">900</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">950</div>
+    <div style="display:flex; border-bottom:1px solid #f3f4f6;">
+      <div style="flex:1;"><div style="height:52px; background:#f9fbfb;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">50</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#f1f3f3;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">100</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#e3e7e8;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">200</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#d0d6d8;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">300</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#9ca8ab;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">400</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#67787c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">500</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#4b585b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">600</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#394447;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">700</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#22292b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">800</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#161b1d;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">900</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#090b0c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">950</div></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #f9fafb;">
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Card</p>
+        <div style="background:#f9fbfb; border:1px solid #e3e7e8; border-radius:10px; padding:14px;">
+          <div style="width:26px; height:26px; border-radius:6px; background:#67787c; margin-bottom:9px;"></div>
+          <div style="font-size:12px; font-weight:600; color:#161b1d; margin-bottom:3px;">Card heading</div>
+          <div style="font-size:11px; color:#4b585b; line-height:1.5; margin-bottom:10px;">Description text using this palette.</div>
+          <div style="display:flex; gap:6px;">
+            <span style="padding:3px 9px; border-radius:5px; background:#4b585b; color:#fff; font-size:11px; font-weight:600;">Action</span>
+            <span style="padding:3px 9px; border-radius:5px; background:#f1f3f3; color:#394447; font-size:11px; border:1px solid #e3e7e8;">Cancel</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Badges</p>
+        <div style="display:flex; flex-direction:column; gap:7px; align-items:flex-start;">
+          <span style="padding:2px 9px; border-radius:999px; background:#f1f3f3; color:#394447; font-size:11px;">Default</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#67787c; color:#fff; font-size:11px;">Active</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#161b1d; color:#e3e7e8; font-size:11px;">Dark</span>
+          <span style="padding:2px 9px; border-radius:999px; border:1px solid #d0d6d8; color:#4b585b; font-size:11px;">Outline</span>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Buttons</p>
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#4b585b; color:#fff; font-size:11px; font-weight:600;">Primary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#f1f3f3; color:#22292b; font-size:11px; border:1px solid #e3e7e8;">Secondary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; border:1px solid #d0d6d8; color:#4b585b; font-size:11px;">Ghost</span>
+        </div>
+      </div>
+      <div style="padding:16px;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Typography</p>
+        <div style="display:flex; flex-direction:column; gap:3px; margin-bottom:10px;">
+          <span style="font-size:14px; font-weight:700; color:#090b0c;">Heading</span>
+          <span style="font-size:12px; color:#22292b;">Body copy</span>
+          <span style="font-size:12px; color:#4b585b;">Secondary</span>
+          <span style="font-size:12px; color:#9ca8ab;">Muted</span>
+        </div>
+        <div style="height:5px; border-radius:999px; background:#f1f3f3;"><div style="width:60%; height:100%; border-radius:999px; background:#67787c;"></div></div>
+        <span style="font-size:9px; color:#9ca3af; font-family:monospace;">Progress · 60%</span>
+      </div>
     </div>
   </div>
 
-  <div>
-    <p style="font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.06em; margin:0 0 6px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#7c6d67;"></span> taupe</p>
-    <div style="display:flex; border-radius:8px; overflow:hidden; height:48px;">
-      <div style="flex:1; background:#fbfaf9;" title="50"></div>
-      <div style="flex:1; background:#f3f1f1;" title="100"></div>
-      <div style="flex:1; background:#e8e4e3;" title="200"></div>
-      <div style="flex:1; background:#d8d2d0;" title="300"></div>
-      <div style="flex:1; background:#aba09c;" title="400"></div>
-      <div style="flex:1; background:#7c6d67;" title="500"></div>
-      <div style="flex:1; background:#5b4f4b;" title="600"></div>
-      <div style="flex:1; background:#473c39;" title="700"></div>
-      <div style="flex:1; background:#2b2422;" title="800"></div>
-      <div style="flex:1; background:#1d1816;" title="900"></div>
-      <div style="flex:1; background:#0c0a09;" title="950"></div>
+  <!-- ── TAUPE ───────────────────────────────────────────── -->
+  <div style="background:#fff; border-radius:16px; overflow:hidden; border:1px solid #e5e7eb; box-shadow:0 1px 3px rgba(0,0,0,0.06);">
+    <div style="display:flex; align-items:center; gap:10px; padding:12px 20px; border-bottom:1px solid #f3f4f6;">
+      <span style="width:12px; height:12px; border-radius:50%; background:#7c6d67; display:inline-block; flex-shrink:0;"></span>
+      <span style="font-size:14px; font-weight:600; color:#111827;">taupe</span>
+      <span style="font-size:12px; color:#9ca3af;">— warm brownish-gray · classic</span>
     </div>
-    <div style="display:flex; margin-top:3px;">
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">50</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">100</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">200</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">300</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">400</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">500</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">600</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">700</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">800</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">900</div>
-      <div style="flex:1; text-align:center; font-size:10px; color:#9ca3af; font-family:monospace;">950</div>
+    <div style="display:flex; border-bottom:1px solid #f3f4f6;">
+      <div style="flex:1;"><div style="height:52px; background:#fbfaf9;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">50</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#f3f1f1;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">100</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#e8e4e3;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">200</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#d8d2d0;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">300</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#aba09c;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">400</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#7c6d67;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">500</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#5b4f4b;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">600</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#473c39;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">700</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#2b2422;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">800</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#1d1816;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">900</div></div>
+      <div style="flex:1;"><div style="height:52px; background:#0c0a09;"></div><div style="text-align:center; font-size:9px; font-family:monospace; color:#9ca3af; padding:3px 0;">950</div></div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #f9fafb;">
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Card</p>
+        <div style="background:#fbfaf9; border:1px solid #e8e4e3; border-radius:10px; padding:14px;">
+          <div style="width:26px; height:26px; border-radius:6px; background:#7c6d67; margin-bottom:9px;"></div>
+          <div style="font-size:12px; font-weight:600; color:#1d1816; margin-bottom:3px;">Card heading</div>
+          <div style="font-size:11px; color:#5b4f4b; line-height:1.5; margin-bottom:10px;">Description text using this palette.</div>
+          <div style="display:flex; gap:6px;">
+            <span style="padding:3px 9px; border-radius:5px; background:#5b4f4b; color:#fff; font-size:11px; font-weight:600;">Action</span>
+            <span style="padding:3px 9px; border-radius:5px; background:#f3f1f1; color:#473c39; font-size:11px; border:1px solid #e8e4e3;">Cancel</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Badges</p>
+        <div style="display:flex; flex-direction:column; gap:7px; align-items:flex-start;">
+          <span style="padding:2px 9px; border-radius:999px; background:#f3f1f1; color:#473c39; font-size:11px;">Default</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#7c6d67; color:#fff; font-size:11px;">Active</span>
+          <span style="padding:2px 9px; border-radius:999px; background:#1d1816; color:#e8e4e3; font-size:11px;">Dark</span>
+          <span style="padding:2px 9px; border-radius:999px; border:1px solid #d8d2d0; color:#5b4f4b; font-size:11px;">Outline</span>
+        </div>
+      </div>
+      <div style="padding:16px; border-right:1px solid #f3f4f6;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Buttons</p>
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#5b4f4b; color:#fff; font-size:11px; font-weight:600;">Primary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; background:#f3f1f1; color:#2b2422; font-size:11px; border:1px solid #e8e4e3;">Secondary</span>
+          <span style="display:block; padding:5px 10px; border-radius:7px; border:1px solid #d8d2d0; color:#5b4f4b; font-size:11px;">Ghost</span>
+        </div>
+      </div>
+      <div style="padding:16px;">
+        <p style="font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:#d1d5db; margin:0 0 10px;">Typography</p>
+        <div style="display:flex; flex-direction:column; gap:3px; margin-bottom:10px;">
+          <span style="font-size:14px; font-weight:700; color:#0c0a09;">Heading</span>
+          <span style="font-size:12px; color:#2b2422;">Body copy</span>
+          <span style="font-size:12px; color:#5b4f4b;">Secondary</span>
+          <span style="font-size:12px; color:#aba09c;">Muted</span>
+        </div>
+        <div style="height:5px; border-radius:999px; background:#f3f1f1;"><div style="width:60%; height:100%; border-radius:999px; background:#7c6d67;"></div></div>
+        <span style="font-size:9px; color:#9ca3af; font-family:monospace;">Progress · 60%</span>
+      </div>
     </div>
   </div>
 
