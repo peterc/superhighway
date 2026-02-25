@@ -8,7 +8,7 @@ author: "chris-brandrick"
 newsletter: "frontend"
 ---
 
-Tailwind CSS v4.2 introduces four new palettes to the growing, default color scale. However, these new additions aren't overly expressive, instead these fresh options introduce a few neutral swatches to the overall offering. Each of the four (namely Mauve, Olive, Mist and Taupe) features a range of rather subtle hues — these are earthy, muted tones that stand in contrast to the more vivid options already available.
+[Tailwind CSS v4.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.0) introduces four new palettes to the growing, default color scale. However, these new additions aren't overly expressive, instead these fresh options introduce a few neutral swatches to the overall offering. Each of the four (namely Mauve, Olive, Mist and Taupe) features a range of rather subtle hues — these are earthy, muted tones that stand in contrast to the more vivid options already available.
 
 I guess in practice, these new palettes go alongside the likes of `slate` or `zinc` — all of which are softer color ranges. These new additions may help when you want just a hint of color rather than something more shouty. Let's take a quick look at them:
 
