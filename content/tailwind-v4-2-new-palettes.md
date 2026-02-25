@@ -5,7 +5,7 @@ date: 2026-02-24
 category: "Tailwind CSS"
 subtitle: "Mauve, olive, mist, and taupe join the Tailwind CSS palette, all offfering swatches of tinted neutral colors."
 author: "chris-brandrick"
-og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/images/uwluwry4yqfhsgu6aodh.jpg"
+og_image: "https://pub-3fa0e7d81e2e40048e588fb51d66fe18.r2.dev/tailwind-css-new-colors.jpg"
 newsletter: "frontend"
 ---
 
