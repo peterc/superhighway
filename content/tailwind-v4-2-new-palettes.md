@@ -54,7 +54,7 @@ The key advantage of oklch? The lightness steps up from one shade to another fee
 *Source values from `packages/tailwindcss/theme.css` · hex approximations computed from oklch*
 
 <p style="font-size:13px; font-weight:600; color:#374151; margin:32px 0 8px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#79697b;"></span> mauve</p>
-<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; background-color:#fff;">
   <thead>
     <tr style="background:#f9fafb;">
       <th style="text-align:left; padding:8px 12px; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; border-bottom:1px solid #e5e7eb; width:56px;">Shade</th>
@@ -79,7 +79,7 @@ The key advantage of oklch? The lightness steps up from one shade to another fee
 </table>
 
 <p style="font-size:13px; font-weight:600; color:#374151; margin:32px 0 8px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#7c7c67;"></span> olive</p>
-<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; background-color:#fff;">
   <thead>
     <tr style="background:#f9fafb;">
       <th style="text-align:left; padding:8px 12px; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; border-bottom:1px solid #e5e7eb; width:56px;">Shade</th>
@@ -104,7 +104,7 @@ The key advantage of oklch? The lightness steps up from one shade to another fee
 </table>
 
 <p style="font-size:13px; font-weight:600; color:#374151; margin:32px 0 8px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#67787c;"></span> mist</p>
-<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; background-color:#fff;">
   <thead>
     <tr style="background:#f9fafb;">
       <th style="text-align:left; padding:8px 12px; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; border-bottom:1px solid #e5e7eb; width:56px;">Shade</th>
@@ -129,7 +129,7 @@ The key advantage of oklch? The lightness steps up from one shade to another fee
 </table>
 
 <p style="font-size:13px; font-weight:600; color:#374151; margin:32px 0 8px; display:flex; align-items:center; gap:6px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#7c6d67;"></span> taupe</p>
-<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+<table style="width:100%; border-collapse:collapse; font-size:13px; margin-bottom:32px; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden; background-color:#fff;">
   <thead>
     <tr style="background:#f9fafb;">
       <th style="text-align:left; padding:8px 12px; font-size:11px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:0.05em; border-bottom:1px solid #e5e7eb; width:56px;">Shade</th>
