@@ -20,7 +20,7 @@ Outputs to `public/`, which is gitignored.
 
 ## Deployment
 
-Handled by Netlify. Pushing to the master branch triggers a build automatically using the settings in `netlify.toml`.
+Handled by GitHub Pages. Pushing to `master` triggers the workflow in `.github/workflows/deploy.yml`, which builds the site with Hugo and publishes `public/`.
 
 ## Project structure
 

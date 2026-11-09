@@ -12,5 +12,13 @@
     <h1>Oops, page not found</h1>
     <p><a href="/">Back to the homepage</a></p>
   </main>
+  <script>
+    const redirects = {
+      "/example2": "/example",
+      "/black-friday-developer-deals-2020": "/black-friday-developer-things-2020.html"
+    };
+    const destination = redirects[window.location.pathname.replace(/\/$/, "")];
+    if (destination) window.location.replace(destination);
+  </script>
 </body>
 </html>
