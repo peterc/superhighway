@@ -29,7 +29,7 @@ Handled by GitHub Pages. Pushing to `master` triggers the workflow in `.github/w
 | `content/` | Markdown articles with YAML front matter |
 | `layouts/` | Hugo templates (base, single, homepage, partials) |
 | `data/`    | Author bios (`authors.yaml`) and newsletter promos (`newsletters.yaml`) |
-| `static/`  | CSS, fonts, images, highlight.js, favicon files, `_redirects` |
+| `static/`  | CSS, fonts, images, highlight.js, and favicon files |
 
 ## Adding an article
 
